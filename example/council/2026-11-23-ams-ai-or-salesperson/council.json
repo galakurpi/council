@@ -1,0 +1,3 @@
+{"question": "Should I replace my account managers with AI or hire a salesperson?", "business": "Austin performance marketing agency, 18 clients at $3K/mo, 16% margin, $70K cash",
+ "options": {"A": "Replace AMs with AI", "B": "Hire a closer", "C": "Neither, keep the cash"}, "hold": "C",
+ "weights": {"hormozi": 3, "musk": 2, "buffett": 3, "zuckerberg": 2, "mrbeast": 1}}

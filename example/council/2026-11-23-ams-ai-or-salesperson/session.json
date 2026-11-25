@@ -1,0 +1,1117 @@
+{
+ "slug": "2026-11-23-ams-ai-or-salesperson",
+ "question": "Should I replace my account managers with AI or hire a salesperson?",
+ "options": {
+  "A": "Replace AMs with AI",
+  "B": "Hire a closer",
+  "C": "Neither, keep the cash"
+ },
+ "hold": "C",
+ "weights": {
+  "hormozi": 3,
+  "musk": 2,
+  "buffett": 3,
+  "zuckerberg": 2,
+  "mrbeast": 1
+ },
+ "business": "Austin performance marketing agency, 18 clients at $3K/mo, 16% margin, $70K cash",
+ "seats": {
+  "hormozi": {
+   "name": "Alex Hormozi",
+   "short": "Hormozi",
+   "lens": "Offer & money",
+   "question": "Does the money math work, and is the offer strong enough to carry it?",
+   "color": "#e0895c"
+  },
+  "musk": {
+   "name": "Elon Musk",
+   "short": "Musk",
+   "lens": "First principles & 10x",
+   "question": "What is the real constraint, and which step can we delete?",
+   "color": "#c9c2b6"
+  },
+  "buffett": {
+   "name": "Warren Buffett",
+   "short": "Buffett",
+   "lens": "Cash, risk & long-term value",
+   "question": "What does this do to cash, risk and long-term value?",
+   "color": "#8cbd9a"
+  },
+  "zuckerberg": {
+   "name": "Mark Zuckerberg",
+   "short": "Zuckerberg",
+   "lens": "Distribution",
+   "question": "What will Meta's feed and ads actually reward here?",
+   "color": "#93aaea"
+  },
+  "mrbeast": {
+   "name": "MrBeast",
+   "short": "MrBeast",
+   "lens": "Attention",
+   "question": "Will people click, and will they keep watching?",
+   "color": "#e4c25e"
+  }
+ },
+ "rounds": {
+  "1": {
+   "title": "Opening",
+   "cards": {
+    "hormozi": {
+     "SEAT": "Hormozi",
+     "STAKE": "in, because lead handling, unit economics and the offer are all in play.",
+     "STANCE": "Conditional yes",
+     "OPTION SCORES": "A 3/10 · B 7/10 · C 3/10",
+     "CONFIDENCE": "3/5",
+     "RUIN RISK": "possible",
+     "DOOR": "two-way",
+     "THE CALL": "Option B, hire the closer on a base-plus-commission deal with a 90-day kill rule, and do not touch the AMs yet.",
+     "WHY": "1. The leak is in lead handling (H5). I assume 20 to 25 calls a month, and the founder pushes about half of them. A closer who holds those calls at the same 2 in 10 adds about 2 clients a month, or $6,000/mo of new revenue each month.\n2. The unit economics clear the bar (H4). A client is worth $3,000/mo, and the closer costs about $3,600 per client in commission, which is 1.2 months of fees. LTV to CAC is well above 3 to 1, assuming a client stays about 12 months.\n3. A saves $8,400/mo, but it cuts the people who calm clients when results dip (H6). Churn is already 1 client a month, and 2 of the last 5 leavers cited communication. I'd be paying $23,000 to risk the $3,000/mo clients I already have.\n4. The constraint is top-of-funnel conversion, not report cost (H6). Savings don't grow the business. Closed deals do.",
+     "THE RISK I SEE": "The closer closes below 2 in 10, or the founder's pushed calls were low quality. Then I'm out $5,000/mo plus commission for 3 months of ramp, about $15,000, and nothing has changed.",
+     "WHAT WOULD CHANGE MY MIND": "Show me that fewer than 5 calls a month are actually pushed or lost, or that the AMs' calming work is under 10 hours a month. Then A's savings win.",
+     "SAYS": "B. You don't have a report problem, you have a call problem. Half your calls get pushed, and that's about $6,000/mo of MRR leaking.\nA saves $8,400 but risks churn on $54,000 of revenue. Fix the leak first, then automate the reports.",
+     "scores": {
+      "A": 3.0,
+      "B": 7.0,
+      "C": 3.0
+     },
+     "confidence": 3.0,
+     "stake": "in",
+     "raw": "SEAT: Hormozi\nSTAKE: in, because lead handling, unit economics and the offer are all in play.\nSTANCE: Conditional yes\nOPTION SCORES: A 3/10 · B 7/10 · C 3/10\nCONFIDENCE: 3/5\nRUIN RISK: possible\nDOOR: two-way\nTHE CALL: Option B, hire the closer on a base-plus-commission deal with a 90-day kill rule, and do not touch the AMs yet.\n\nWHY:\n1. The leak is in lead handling (H5). I assume 20 to 25 calls a month, and the founder pushes about half of them. A closer who holds those calls at the same 2 in 10 adds about 2 clients a month, or $6,000/mo of new revenue each month.\n2. The unit economics clear the bar (H4). A client is worth $3,000/mo, and the closer costs about $3,600 per client in commission, which is 1.2 months of fees. LTV to CAC is well above 3 to 1, assuming a client stays about 12 months.\n3. A saves $8,400/mo, but it cuts the people who calm clients when results dip (H6). Churn is already 1 client a month, and 2 of the last 5 leavers cited communication. I'd be paying $23,000 to risk the $3,000/mo clients I already have.\n4. The constraint is top-of-funnel conversion, not report cost (H6). Savings don't grow the business. Closed deals do.\n\nTHE RISK I SEE: The closer closes below 2 in 10, or the founder's pushed calls were low quality. Then I'm out $5,000/mo plus commission for 3 months of ramp, about $15,000, and nothing has changed.\n\nWHAT WOULD CHANGE MY MIND: Show me that fewer than 5 calls a month are actually pushed or lost, or that the AMs' calming work is under 10 hours a month. Then A's savings win.\n\nSAYS:\nB. You don't have a report problem, you have a call problem. Half your calls get pushed, and that's about $6,000/mo of MRR leaking.\nA saves $8,400 but risks churn on $54,000 of revenue. Fix the leak first, then automate the reports."
+    },
+    "musk": {
+     "SEAT": "Musk",
+     "STAKE": "in. The report work is a step-deletion question, which is my lens.",
+     "STANCE": "Conditional yes",
+     "OPTION SCORES": "A 6/10 · B 4/10 · C 5/10",
+     "CONFIDENCE": "3/5",
+     "RUIN RISK": "possible",
+     "DOOR": "two-way (as a variant; plain A is one-way once the severance is paid)",
+     "THE CALL": "A variant. Delete the reports with live client dashboards first, then cut one AM, and skip the $14K custom build.",
+     "WHY": "1. 60% of two AM weeks is reports and status updates. That is about $5,400/mo of work, and I'd question why it exists before I automate it (M2, M3).\n2. Clients asked for more reporting, which means they want to see numbers, not receive emails. A live dashboard deletes the report. The $14K build for 6 weeks is automating before deleting (M4).\n3. The limit on growth is the founder's calendar. He pushes half his closes because he is in delivery (M7). Pulling him out of delivery matters more than who writes reports.\n4. A dashboard pilot takes days. Test it on 3 clients and keep both AMs until it holds (M6, M8).",
+     "THE RISK I SEE": "The AMs' other 40% is calming clients when results dip. Remove them and churn goes from 1 a month to 2 or more. That is $3K/mo lost per client, and the cash is only 6 weeks deep.",
+     "WHAT WOULD CHANGE MY MIND": "If the 3-client pilot shows clients still demand emailed reports and calls after the dashboards go live, the step is load-bearing. Then I'd go to C.",
+     "SAYS": "I'd delete the reports before I fire anyone. 60% of AM time is a step that shouldn't exist.\n$14K and 6 weeks is automating waste. Dashboards on 3 clients take days. Run that first.",
+     "scores": {
+      "A": 6.0,
+      "B": 4.0,
+      "C": 5.0
+     },
+     "confidence": 3.0,
+     "stake": "in",
+     "raw": "SEAT: Musk\nSTAKE: in. The report work is a step-deletion question, which is my lens.\nSTANCE: Conditional yes\nOPTION SCORES: A 6/10 · B 4/10 · C 5/10\nCONFIDENCE: 3/5\nRUIN RISK: possible\nDOOR: two-way (as a variant; plain A is one-way once the severance is paid)\nTHE CALL: A variant. Delete the reports with live client dashboards first, then cut one AM, and skip the $14K custom build.\n\nWHY:\n1. 60% of two AM weeks is reports and status updates. That is about $5,400/mo of work, and I'd question why it exists before I automate it (M2, M3).\n2. Clients asked for more reporting, which means they want to see numbers, not receive emails. A live dashboard deletes the report. The $14K build for 6 weeks is automating before deleting (M4).\n3. The limit on growth is the founder's calendar. He pushes half his closes because he is in delivery (M7). Pulling him out of delivery matters more than who writes reports.\n4. A dashboard pilot takes days. Test it on 3 clients and keep both AMs until it holds (M6, M8).\nTHE RISK I SEE: The AMs' other 40% is calming clients when results dip. Remove them and churn goes from 1 a month to 2 or more. That is $3K/mo lost per client, and the cash is only 6 weeks deep.\nWHAT WOULD CHANGE MY MIND: If the 3-client pilot shows clients still demand emailed reports and calls after the dashboards go live, the step is load-bearing. Then I'd go to C.\nSAYS:\nI'd delete the reports before I fire anyone. 60% of AM time is a step that shouldn't exist.\n$14K and 6 weeks is automating waste. Dashboards on 3 clients take days. Run that first."
+    },
+    "buffett": {
+     "SEAT": "Buffett",
+     "STAKE": "in, because it spends 6 weeks of cash on a build and severance.",
+     "STANCE": "Conditional yes (on B)",
+     "OPTION SCORES": "A 3/10 · B 7/10 · C 5/10",
+     "CONFIDENCE": "4/5",
+     "RUIN RISK": "none",
+     "DOOR": "two-way",
+     "THE CALL": "Hire the closer on a 90-day trial with the base pay capped, and leave the AMs alone this quarter.",
+     "WHY": "1. Option A spends $23,000 (build plus severance) of a $70,000 cushion. That leaves about 4 weeks of costs in the bank, and the severance can't be undone. I won't trade B4 for a saving I haven't seen yet. (B1, B4)\n2. The $8,400/mo saving disappears if AI-run accounts cost you one extra client a month. You already lose one a month, and 2 of the last 5 leavers cited \"communication\". I'd call that a real chance. (B7)\n3. B's worst case is about $15,000 of base pay over the 3-month ramp. Commission is only paid on clients who sign. If he doesn't close, you let him go and keep the AMs. Each client is $3,000/mo, so one close in the ramp starts paying you back. (B3, B7)\n4. More clients widens the base. Cutting costs just rents a better margin. I assume the closer matches your 2-in-10 close rate, which is unproven. (B5)",
+     "THE RISK I SEE": "The AI build quietly raises churn. If you lose 3 clients, that's $9,000/mo gone, and the cash is already spent.",
+     "WHAT WOULD CHANGE MY MIND": "Proof from a live pilot on 3 clients showing client retention holds with AI reporting. Or the closer's first 60 days showing under 1 close per 20 calls. Then I'd go with C and keep the cash.",
+     "SAYS": "B, with a 90-day cap. A burns $23k and leaves you 4 weeks of cash. A bad hire costs you $15k at most.\nFounder, I get being tired of reports. Pilot the AI on 3 accounts first. Don't fire anyone on a hunch.",
+     "scores": {
+      "A": 3.0,
+      "B": 7.0,
+      "C": 5.0
+     },
+     "confidence": 4.0,
+     "stake": "in",
+     "raw": "SEAT: Buffett\nSTAKE: in, because it spends 6 weeks of cash on a build and severance.\nSTANCE: Conditional yes (on B)\nOPTION SCORES: A 3/10 · B 7/10 · C 5/10\nCONFIDENCE: 4/5\nRUIN RISK: none\nDOOR: two-way\nTHE CALL: Hire the closer on a 90-day trial with the base pay capped, and leave the AMs alone this quarter.\nWHY:\n1. Option A spends $23,000 (build plus severance) of a $70,000 cushion. That leaves about 4 weeks of costs in the bank, and the severance can't be undone. I won't trade B4 for a saving I haven't seen yet. (B1, B4)\n2. The $8,400/mo saving disappears if AI-run accounts cost you one extra client a month. You already lose one a month, and 2 of the last 5 leavers cited \"communication\". I'd call that a real chance. (B7)\n3. B's worst case is about $15,000 of base pay over the 3-month ramp. Commission is only paid on clients who sign. If he doesn't close, you let him go and keep the AMs. Each client is $3,000/mo, so one close in the ramp starts paying you back. (B3, B7)\n4. More clients widens the base. Cutting costs just rents a better margin. I assume the closer matches your 2-in-10 close rate, which is unproven. (B5)\nTHE RISK I SEE: The AI build quietly raises churn. If you lose 3 clients, that's $9,000/mo gone, and the cash is already spent.\nWHAT WOULD CHANGE MY MIND: Proof from a live pilot on 3 clients showing client retention holds with AI reporting. Or the closer's first 60 days showing under 1 close per 20 calls. Then I'd go with C and keep the cash.\nSAYS:\nB, with a 90-day cap. A burns $23k and leaves you 4 weeks of cash. A bad hire costs you $15k at most.\nFounder, I get being tired of reports. Pilot the AI on 3 accounts first. Don't fire anyone on a hunch."
+    },
+    "zuckerberg": {
+     "SEAT": "Zuckerberg",
+     "STAKE": "light, the lead-flow side of B is mine, but this is mostly a back-office and cash call",
+     "STANCE": "Conditional yes",
+     "OPTION SCORES": "A 4/10 · B 6/10 · C 3/10",
+     "CONFIDENCE": "3/5",
+     "RUIN RISK": "possible",
+     "DOOR": "two-way",
+     "THE CALL": "Back B, the closer, as a test: 90 days, and cap the base pay until the close rate is proven.",
+     "WHY": "1. The system rewards volume in, and there are 20 to 25 calls a month. The founder closes 2 in 10 and pushes half of the wins because he is in delivery. A closer who answers fast turns the same flow into more clients without any new ad spend (Z6).\n2. Standing still is the risk. Margin went from 31% to 16%, and C does nothing about that (Z7). B's cost is about $5,000/mo plus commission. I assume the 2-in-10 close rate holds. At that rate it is about 4 to 5 closes a month, and each new client is worth $3,000/mo.\n3. If B works, I would put the next dollars into the flow itself, with more referral and LinkedIn creative testing and later ads that open a chat (Z5). That only pays off once someone answers the leads fast.",
+     "THE RISK I SEE": "A closer with a 3-month ramp eats about $15,000 of the $70,000 before any revenue, and the close rate comes in below 2 in 10.",
+     "WHAT WOULD CHANGE MY MIND": "If the founder's pushed-back calls are only 1 in 10 of the real pipeline, or lead volume is under 15 calls a month, the closer has nothing to close, and I would drop to C.",
+     "SAYS": "B, but as a test. 20 to 25 calls a month and half get pushed is free volume you're leaving on the floor.\nCap the base for 90 days. I'd read close rate by week 6, not month 3.",
+     "scores": {
+      "A": 4.0,
+      "B": 6.0,
+      "C": 3.0
+     },
+     "confidence": 3.0,
+     "stake": "light",
+     "raw": "SEAT: Zuckerberg\nSTAKE: light, the lead-flow side of B is mine, but this is mostly a back-office and cash call\nSTANCE: Conditional yes\nOPTION SCORES: A 4/10 · B 6/10 · C 3/10\nCONFIDENCE: 3/5\nRUIN RISK: possible\nDOOR: two-way\nTHE CALL: Back B, the closer, as a test: 90 days, and cap the base pay until the close rate is proven.\n\nWHY:\n1. The system rewards volume in, and there are 20 to 25 calls a month. The founder closes 2 in 10 and pushes half of the wins because he is in delivery. A closer who answers fast turns the same flow into more clients without any new ad spend (Z6).\n2. Standing still is the risk. Margin went from 31% to 16%, and C does nothing about that (Z7). B's cost is about $5,000/mo plus commission. I assume the 2-in-10 close rate holds. At that rate it is about 4 to 5 closes a month, and each new client is worth $3,000/mo.\n3. If B works, I would put the next dollars into the flow itself, with more referral and LinkedIn creative testing and later ads that open a chat (Z5). That only pays off once someone answers the leads fast.\n\nTHE RISK I SEE: A closer with a 3-month ramp eats about $15,000 of the $70,000 before any revenue, and the close rate comes in below 2 in 10.\n\nWHAT WOULD CHANGE MY MIND: If the founder's pushed-back calls are only 1 in 10 of the real pipeline, or lead volume is under 15 calls a month, the closer has nothing to close, and I would drop to C.\n\nSAYS:\nB, but as a test. 20 to 25 calls a month and half get pushed is free volume you're leaving on the floor.\nCap the base for 90 days. I'd read close rate by week 6, not month 3."
+    },
+    "mrbeast": {
+     "SEAT": "MrBeast",
+     "STAKE": "light, because attention and retention only touch the client-communication and lead-handling parts.",
+     "STANCE": "Conditional yes",
+     "OPTION SCORES": "A 3/10 · B 6/10 · C 4/10",
+     "CONFIDENCE": "2/5",
+     "RUIN RISK": "possible",
+     "DOOR": "two-way",
+     "THE CALL": "Hire the closer (B), but only after the founder runs a 2-week test on the half of leads he currently pushes.",
+     "WHY": "1. The viewer is the boss (MB6). The client is the viewer here. Two of the last five leavers said \"communication\", so I wouldn't cut the humans who calm them down when results dip (MB2).\n2. Option A cuts the 40% of an AM's week that is client calls, the part that keeps retention up. Churn is already 1 client a month, about $3,000/mo lost each time. A saves $8,400/mo, and four more churned clients erase that saving (assumed).\n3. The leads exist: 20 to 25 calls a month, and the founder pushes half of them. Fixing follow-up speed is a fast, cheap rep (MB5). At a 2-in-10 close rate, B costs about $5,000/mo plus $3,600 per client.",
+     "THE RISK I SEE": "the closer's close rate falls below 2 in 10 and the founder burns about $15,000 of ramp pay on the 3-month ramp.",
+     "WHAT WOULD CHANGE MY MIND": "Showing that the AMs' client-facing time can be cut without raising churn. A pilot with AI-written reports and the same AM calls, with churn flat at 1 a month or less, would do it.",
+     "SAYS": "Don't cut the people who talk to clients, because churn is already 1 a month. Fix the leads first.",
+     "scores": {
+      "A": 3.0,
+      "B": 6.0,
+      "C": 4.0
+     },
+     "confidence": 2.0,
+     "stake": "light",
+     "raw": "SEAT: MrBeast\nSTAKE: light, because attention and retention only touch the client-communication and lead-handling parts.\nSTANCE: Conditional yes\nOPTION SCORES: A 3/10 · B 6/10 · C 4/10\nCONFIDENCE: 2/5\nRUIN RISK: possible\nDOOR: two-way\nTHE CALL: Hire the closer (B), but only after the founder runs a 2-week test on the half of leads he currently pushes.\n\nWHY:\n1. The viewer is the boss (MB6). The client is the viewer here. Two of the last five leavers said \"communication\", so I wouldn't cut the humans who calm them down when results dip (MB2).\n2. Option A cuts the 40% of an AM's week that is client calls, the part that keeps retention up. Churn is already 1 client a month, about $3,000/mo lost each time. A saves $8,400/mo, and four more churned clients erase that saving (assumed).\n3. The leads exist: 20 to 25 calls a month, and the founder pushes half of them. Fixing follow-up speed is a fast, cheap rep (MB5). At a 2-in-10 close rate, B costs about $5,000/mo plus $3,600 per client.\nTHE RISK I SEE: the closer's close rate falls below 2 in 10 and the founder burns about $15,000 of ramp pay on the 3-month ramp.\nWHAT WOULD CHANGE MY MIND: Showing that the AMs' client-facing time can be cut without raising churn. A pilot with AI-written reports and the same AM calls, with churn flat at 1 a month or less, would do it.\nSAYS:\nDon't cut the people who talk to clients, because churn is already 1 a month. Fix the leads first."
+    }
+   },
+   "notes": "- **Crux 1: can the report work be deleted or automated cheaply?** Musk (A variant, dashboards, no $14K build) vs Hormozi and Buffett (leave the AMs alone this quarter).\n- **Crux 2: is the pushed half of calls real, closable pipeline?** Hormozi and Zuckerberg (it is, about $6,000/mo) vs Musk (founder's calendar is the limit, so fix delivery load, not hire a closer).\n- **Crux 3: is C the unargued option?** Four seats back B at 6 to 7, but Buffett and Musk both score C at 5 and the close rate is assumed. Buffett and Musk must argue what a no-spend quarter beats.\n- **Unanimity check:** not unanimous (Musk backs a variant of A), but B leads 4 of 5 at 6 to 7. Treat that as a warning and press the close-rate assumption.",
+   "turns": [
+    {
+     "seat": "hormozi",
+     "card": {
+      "SEAT": "Hormozi",
+      "STAKE": "in, because lead handling, unit economics and the offer are all in play.",
+      "STANCE": "Conditional yes",
+      "OPTION SCORES": "A 3/10 · B 7/10 · C 3/10",
+      "CONFIDENCE": "3/5",
+      "RUIN RISK": "possible",
+      "DOOR": "two-way",
+      "THE CALL": "Option B, hire the closer on a base-plus-commission deal with a 90-day kill rule, and do not touch the AMs yet.",
+      "WHY": "1. The leak is in lead handling (H5). I assume 20 to 25 calls a month, and the founder pushes about half of them. A closer who holds those calls at the same 2 in 10 adds about 2 clients a month, or $6,000/mo of new revenue each month.\n2. The unit economics clear the bar (H4). A client is worth $3,000/mo, and the closer costs about $3,600 per client in commission, which is 1.2 months of fees. LTV to CAC is well above 3 to 1, assuming a client stays about 12 months.\n3. A saves $8,400/mo, but it cuts the people who calm clients when results dip (H6). Churn is already 1 client a month, and 2 of the last 5 leavers cited communication. I'd be paying $23,000 to risk the $3,000/mo clients I already have.\n4. The constraint is top-of-funnel conversion, not report cost (H6). Savings don't grow the business. Closed deals do.",
+      "THE RISK I SEE": "The closer closes below 2 in 10, or the founder's pushed calls were low quality. Then I'm out $5,000/mo plus commission for 3 months of ramp, about $15,000, and nothing has changed.",
+      "WHAT WOULD CHANGE MY MIND": "Show me that fewer than 5 calls a month are actually pushed or lost, or that the AMs' calming work is under 10 hours a month. Then A's savings win.",
+      "SAYS": "B. You don't have a report problem, you have a call problem. Half your calls get pushed, and that's about $6,000/mo of MRR leaking.\nA saves $8,400 but risks churn on $54,000 of revenue. Fix the leak first, then automate the reports.",
+      "scores": {
+       "A": 3.0,
+       "B": 7.0,
+       "C": 3.0
+      },
+      "confidence": 3.0,
+      "stake": "in",
+      "raw": "SEAT: Hormozi\nSTAKE: in, because lead handling, unit economics and the offer are all in play.\nSTANCE: Conditional yes\nOPTION SCORES: A 3/10 · B 7/10 · C 3/10\nCONFIDENCE: 3/5\nRUIN RISK: possible\nDOOR: two-way\nTHE CALL: Option B, hire the closer on a base-plus-commission deal with a 90-day kill rule, and do not touch the AMs yet.\n\nWHY:\n1. The leak is in lead handling (H5). I assume 20 to 25 calls a month, and the founder pushes about half of them. A closer who holds those calls at the same 2 in 10 adds about 2 clients a month, or $6,000/mo of new revenue each month.\n2. The unit economics clear the bar (H4). A client is worth $3,000/mo, and the closer costs about $3,600 per client in commission, which is 1.2 months of fees. LTV to CAC is well above 3 to 1, assuming a client stays about 12 months.\n3. A saves $8,400/mo, but it cuts the people who calm clients when results dip (H6). Churn is already 1 client a month, and 2 of the last 5 leavers cited communication. I'd be paying $23,000 to risk the $3,000/mo clients I already have.\n4. The constraint is top-of-funnel conversion, not report cost (H6). Savings don't grow the business. Closed deals do.\n\nTHE RISK I SEE: The closer closes below 2 in 10, or the founder's pushed calls were low quality. Then I'm out $5,000/mo plus commission for 3 months of ramp, about $15,000, and nothing has changed.\n\nWHAT WOULD CHANGE MY MIND: Show me that fewer than 5 calls a month are actually pushed or lost, or that the AMs' calming work is under 10 hours a month. Then A's savings win.\n\nSAYS:\nB. You don't have a report problem, you have a call problem. Half your calls get pushed, and that's about $6,000/mo of MRR leaking.\nA saves $8,400 but risks churn on $54,000 of revenue. Fix the leak first, then automate the reports."
+     }
+    },
+    {
+     "seat": "musk",
+     "card": {
+      "SEAT": "Musk",
+      "STAKE": "in. The report work is a step-deletion question, which is my lens.",
+      "STANCE": "Conditional yes",
+      "OPTION SCORES": "A 6/10 · B 4/10 · C 5/10",
+      "CONFIDENCE": "3/5",
+      "RUIN RISK": "possible",
+      "DOOR": "two-way (as a variant; plain A is one-way once the severance is paid)",
+      "THE CALL": "A variant. Delete the reports with live client dashboards first, then cut one AM, and skip the $14K custom build.",
+      "WHY": "1. 60% of two AM weeks is reports and status updates. That is about $5,400/mo of work, and I'd question why it exists before I automate it (M2, M3).\n2. Clients asked for more reporting, which means they want to see numbers, not receive emails. A live dashboard deletes the report. The $14K build for 6 weeks is automating before deleting (M4).\n3. The limit on growth is the founder's calendar. He pushes half his closes because he is in delivery (M7). Pulling him out of delivery matters more than who writes reports.\n4. A dashboard pilot takes days. Test it on 3 clients and keep both AMs until it holds (M6, M8).",
+      "THE RISK I SEE": "The AMs' other 40% is calming clients when results dip. Remove them and churn goes from 1 a month to 2 or more. That is $3K/mo lost per client, and the cash is only 6 weeks deep.",
+      "WHAT WOULD CHANGE MY MIND": "If the 3-client pilot shows clients still demand emailed reports and calls after the dashboards go live, the step is load-bearing. Then I'd go to C.",
+      "SAYS": "I'd delete the reports before I fire anyone. 60% of AM time is a step that shouldn't exist.\n$14K and 6 weeks is automating waste. Dashboards on 3 clients take days. Run that first.",
+      "scores": {
+       "A": 6.0,
+       "B": 4.0,
+       "C": 5.0
+      },
+      "confidence": 3.0,
+      "stake": "in",
+      "raw": "SEAT: Musk\nSTAKE: in. The report work is a step-deletion question, which is my lens.\nSTANCE: Conditional yes\nOPTION SCORES: A 6/10 · B 4/10 · C 5/10\nCONFIDENCE: 3/5\nRUIN RISK: possible\nDOOR: two-way (as a variant; plain A is one-way once the severance is paid)\nTHE CALL: A variant. Delete the reports with live client dashboards first, then cut one AM, and skip the $14K custom build.\n\nWHY:\n1. 60% of two AM weeks is reports and status updates. That is about $5,400/mo of work, and I'd question why it exists before I automate it (M2, M3).\n2. Clients asked for more reporting, which means they want to see numbers, not receive emails. A live dashboard deletes the report. The $14K build for 6 weeks is automating before deleting (M4).\n3. The limit on growth is the founder's calendar. He pushes half his closes because he is in delivery (M7). Pulling him out of delivery matters more than who writes reports.\n4. A dashboard pilot takes days. Test it on 3 clients and keep both AMs until it holds (M6, M8).\nTHE RISK I SEE: The AMs' other 40% is calming clients when results dip. Remove them and churn goes from 1 a month to 2 or more. That is $3K/mo lost per client, and the cash is only 6 weeks deep.\nWHAT WOULD CHANGE MY MIND: If the 3-client pilot shows clients still demand emailed reports and calls after the dashboards go live, the step is load-bearing. Then I'd go to C.\nSAYS:\nI'd delete the reports before I fire anyone. 60% of AM time is a step that shouldn't exist.\n$14K and 6 weeks is automating waste. Dashboards on 3 clients take days. Run that first."
+     }
+    },
+    {
+     "seat": "buffett",
+     "card": {
+      "SEAT": "Buffett",
+      "STAKE": "in, because it spends 6 weeks of cash on a build and severance.",
+      "STANCE": "Conditional yes (on B)",
+      "OPTION SCORES": "A 3/10 · B 7/10 · C 5/10",
+      "CONFIDENCE": "4/5",
+      "RUIN RISK": "none",
+      "DOOR": "two-way",
+      "THE CALL": "Hire the closer on a 90-day trial with the base pay capped, and leave the AMs alone this quarter.",
+      "WHY": "1. Option A spends $23,000 (build plus severance) of a $70,000 cushion. That leaves about 4 weeks of costs in the bank, and the severance can't be undone. I won't trade B4 for a saving I haven't seen yet. (B1, B4)\n2. The $8,400/mo saving disappears if AI-run accounts cost you one extra client a month. You already lose one a month, and 2 of the last 5 leavers cited \"communication\". I'd call that a real chance. (B7)\n3. B's worst case is about $15,000 of base pay over the 3-month ramp. Commission is only paid on clients who sign. If he doesn't close, you let him go and keep the AMs. Each client is $3,000/mo, so one close in the ramp starts paying you back. (B3, B7)\n4. More clients widens the base. Cutting costs just rents a better margin. I assume the closer matches your 2-in-10 close rate, which is unproven. (B5)",
+      "THE RISK I SEE": "The AI build quietly raises churn. If you lose 3 clients, that's $9,000/mo gone, and the cash is already spent.",
+      "WHAT WOULD CHANGE MY MIND": "Proof from a live pilot on 3 clients showing client retention holds with AI reporting. Or the closer's first 60 days showing under 1 close per 20 calls. Then I'd go with C and keep the cash.",
+      "SAYS": "B, with a 90-day cap. A burns $23k and leaves you 4 weeks of cash. A bad hire costs you $15k at most.\nFounder, I get being tired of reports. Pilot the AI on 3 accounts first. Don't fire anyone on a hunch.",
+      "scores": {
+       "A": 3.0,
+       "B": 7.0,
+       "C": 5.0
+      },
+      "confidence": 4.0,
+      "stake": "in",
+      "raw": "SEAT: Buffett\nSTAKE: in, because it spends 6 weeks of cash on a build and severance.\nSTANCE: Conditional yes (on B)\nOPTION SCORES: A 3/10 · B 7/10 · C 5/10\nCONFIDENCE: 4/5\nRUIN RISK: none\nDOOR: two-way\nTHE CALL: Hire the closer on a 90-day trial with the base pay capped, and leave the AMs alone this quarter.\nWHY:\n1. Option A spends $23,000 (build plus severance) of a $70,000 cushion. That leaves about 4 weeks of costs in the bank, and the severance can't be undone. I won't trade B4 for a saving I haven't seen yet. (B1, B4)\n2. The $8,400/mo saving disappears if AI-run accounts cost you one extra client a month. You already lose one a month, and 2 of the last 5 leavers cited \"communication\". I'd call that a real chance. (B7)\n3. B's worst case is about $15,000 of base pay over the 3-month ramp. Commission is only paid on clients who sign. If he doesn't close, you let him go and keep the AMs. Each client is $3,000/mo, so one close in the ramp starts paying you back. (B3, B7)\n4. More clients widens the base. Cutting costs just rents a better margin. I assume the closer matches your 2-in-10 close rate, which is unproven. (B5)\nTHE RISK I SEE: The AI build quietly raises churn. If you lose 3 clients, that's $9,000/mo gone, and the cash is already spent.\nWHAT WOULD CHANGE MY MIND: Proof from a live pilot on 3 clients showing client retention holds with AI reporting. Or the closer's first 60 days showing under 1 close per 20 calls. Then I'd go with C and keep the cash.\nSAYS:\nB, with a 90-day cap. A burns $23k and leaves you 4 weeks of cash. A bad hire costs you $15k at most.\nFounder, I get being tired of reports. Pilot the AI on 3 accounts first. Don't fire anyone on a hunch."
+     }
+    },
+    {
+     "seat": "zuckerberg",
+     "card": {
+      "SEAT": "Zuckerberg",
+      "STAKE": "light, the lead-flow side of B is mine, but this is mostly a back-office and cash call",
+      "STANCE": "Conditional yes",
+      "OPTION SCORES": "A 4/10 · B 6/10 · C 3/10",
+      "CONFIDENCE": "3/5",
+      "RUIN RISK": "possible",
+      "DOOR": "two-way",
+      "THE CALL": "Back B, the closer, as a test: 90 days, and cap the base pay until the close rate is proven.",
+      "WHY": "1. The system rewards volume in, and there are 20 to 25 calls a month. The founder closes 2 in 10 and pushes half of the wins because he is in delivery. A closer who answers fast turns the same flow into more clients without any new ad spend (Z6).\n2. Standing still is the risk. Margin went from 31% to 16%, and C does nothing about that (Z7). B's cost is about $5,000/mo plus commission. I assume the 2-in-10 close rate holds. At that rate it is about 4 to 5 closes a month, and each new client is worth $3,000/mo.\n3. If B works, I would put the next dollars into the flow itself, with more referral and LinkedIn creative testing and later ads that open a chat (Z5). That only pays off once someone answers the leads fast.",
+      "THE RISK I SEE": "A closer with a 3-month ramp eats about $15,000 of the $70,000 before any revenue, and the close rate comes in below 2 in 10.",
+      "WHAT WOULD CHANGE MY MIND": "If the founder's pushed-back calls are only 1 in 10 of the real pipeline, or lead volume is under 15 calls a month, the closer has nothing to close, and I would drop to C.",
+      "SAYS": "B, but as a test. 20 to 25 calls a month and half get pushed is free volume you're leaving on the floor.\nCap the base for 90 days. I'd read close rate by week 6, not month 3.",
+      "scores": {
+       "A": 4.0,
+       "B": 6.0,
+       "C": 3.0
+      },
+      "confidence": 3.0,
+      "stake": "light",
+      "raw": "SEAT: Zuckerberg\nSTAKE: light, the lead-flow side of B is mine, but this is mostly a back-office and cash call\nSTANCE: Conditional yes\nOPTION SCORES: A 4/10 · B 6/10 · C 3/10\nCONFIDENCE: 3/5\nRUIN RISK: possible\nDOOR: two-way\nTHE CALL: Back B, the closer, as a test: 90 days, and cap the base pay until the close rate is proven.\n\nWHY:\n1. The system rewards volume in, and there are 20 to 25 calls a month. The founder closes 2 in 10 and pushes half of the wins because he is in delivery. A closer who answers fast turns the same flow into more clients without any new ad spend (Z6).\n2. Standing still is the risk. Margin went from 31% to 16%, and C does nothing about that (Z7). B's cost is about $5,000/mo plus commission. I assume the 2-in-10 close rate holds. At that rate it is about 4 to 5 closes a month, and each new client is worth $3,000/mo.\n3. If B works, I would put the next dollars into the flow itself, with more referral and LinkedIn creative testing and later ads that open a chat (Z5). That only pays off once someone answers the leads fast.\n\nTHE RISK I SEE: A closer with a 3-month ramp eats about $15,000 of the $70,000 before any revenue, and the close rate comes in below 2 in 10.\n\nWHAT WOULD CHANGE MY MIND: If the founder's pushed-back calls are only 1 in 10 of the real pipeline, or lead volume is under 15 calls a month, the closer has nothing to close, and I would drop to C.\n\nSAYS:\nB, but as a test. 20 to 25 calls a month and half get pushed is free volume you're leaving on the floor.\nCap the base for 90 days. I'd read close rate by week 6, not month 3."
+     }
+    },
+    {
+     "seat": "mrbeast",
+     "card": {
+      "SEAT": "MrBeast",
+      "STAKE": "light, because attention and retention only touch the client-communication and lead-handling parts.",
+      "STANCE": "Conditional yes",
+      "OPTION SCORES": "A 3/10 · B 6/10 · C 4/10",
+      "CONFIDENCE": "2/5",
+      "RUIN RISK": "possible",
+      "DOOR": "two-way",
+      "THE CALL": "Hire the closer (B), but only after the founder runs a 2-week test on the half of leads he currently pushes.",
+      "WHY": "1. The viewer is the boss (MB6). The client is the viewer here. Two of the last five leavers said \"communication\", so I wouldn't cut the humans who calm them down when results dip (MB2).\n2. Option A cuts the 40% of an AM's week that is client calls, the part that keeps retention up. Churn is already 1 client a month, about $3,000/mo lost each time. A saves $8,400/mo, and four more churned clients erase that saving (assumed).\n3. The leads exist: 20 to 25 calls a month, and the founder pushes half of them. Fixing follow-up speed is a fast, cheap rep (MB5). At a 2-in-10 close rate, B costs about $5,000/mo plus $3,600 per client.",
+      "THE RISK I SEE": "the closer's close rate falls below 2 in 10 and the founder burns about $15,000 of ramp pay on the 3-month ramp.",
+      "WHAT WOULD CHANGE MY MIND": "Showing that the AMs' client-facing time can be cut without raising churn. A pilot with AI-written reports and the same AM calls, with churn flat at 1 a month or less, would do it.",
+      "SAYS": "Don't cut the people who talk to clients, because churn is already 1 a month. Fix the leads first.",
+      "scores": {
+       "A": 3.0,
+       "B": 6.0,
+       "C": 4.0
+      },
+      "confidence": 2.0,
+      "stake": "light",
+      "raw": "SEAT: MrBeast\nSTAKE: light, because attention and retention only touch the client-communication and lead-handling parts.\nSTANCE: Conditional yes\nOPTION SCORES: A 3/10 · B 6/10 · C 4/10\nCONFIDENCE: 2/5\nRUIN RISK: possible\nDOOR: two-way\nTHE CALL: Hire the closer (B), but only after the founder runs a 2-week test on the half of leads he currently pushes.\n\nWHY:\n1. The viewer is the boss (MB6). The client is the viewer here. Two of the last five leavers said \"communication\", so I wouldn't cut the humans who calm them down when results dip (MB2).\n2. Option A cuts the 40% of an AM's week that is client calls, the part that keeps retention up. Churn is already 1 client a month, about $3,000/mo lost each time. A saves $8,400/mo, and four more churned clients erase that saving (assumed).\n3. The leads exist: 20 to 25 calls a month, and the founder pushes half of them. Fixing follow-up speed is a fast, cheap rep (MB5). At a 2-in-10 close rate, B costs about $5,000/mo plus $3,600 per client.\nTHE RISK I SEE: the closer's close rate falls below 2 in 10 and the founder burns about $15,000 of ramp pay on the 3-month ramp.\nWHAT WOULD CHANGE MY MIND: Showing that the AMs' client-facing time can be cut without raising churn. A pilot with AI-written reports and the same AM calls, with churn flat at 1 a month or less, would do it.\nSAYS:\nDon't cut the people who talk to clients, because churn is already 1 a month. Fix the leads first."
+     }
+    }
+   ]
+  },
+  "2": {
+   "title": "The debate",
+   "cards": {
+    "musk": {
+     "SEAT": "Musk",
+     "REPLY TO": "Hormozi",
+     "POINT": "Hormozi's plan is right. Delete the reports now, then judge the AI spend by what the AMs do with the time. (M3)",
+     "MOVED": "yes, from \"run the dashboard test first\" to \"founder logs the pushed calls too\", because pushed calls are free data on close rate.",
+     "SAYS": "Agreed. Founder logs the 5 to 6 pushed calls, and we get a measured close rate in 30 days for $0.\nDelete the reports this week. Check AM hours freed on day 7. If it's under 40%, the AI build is dead.\nCloser is the next step only if the log shows the 2 in 10 holds.",
+     "target": "hormozi",
+     "raw": "SEAT: Musk\nREPLY TO: Hormozi\nPOINT: Hormozi's plan is right. Delete the reports now, then judge the AI spend by what the AMs do with the time. (M3)\nMOVED: yes, from \"run the dashboard test first\" to \"founder logs the pushed calls too\", because pushed calls are free data on close rate.\nSAYS:\nAgreed. Founder logs the 5 to 6 pushed calls, and we get a measured close rate in 30 days for $0.\nDelete the reports this week. Check AM hours freed on day 7. If it's under 40%, the AI build is dead.\nCloser is the next step only if the log shows the 2 in 10 holds."
+    },
+    "hormozi": {
+     "SEAT": "Hormozi",
+     "REPLY TO": "Musk",
+     "POINT": "Measure close rate on the calls you already have, and delete the reports in parallel. Neither one needs a hire first. (H5)",
+     "MOVED": "yes, from \"hire the closer now\" to \"run a cheap closing test first\", because Musk is right that 2 in 10 is assumed and the closer takes 3 months to ramp.",
+     "SAYS": "Fair on the 2 in 10. It's assumed. So the founder books and follows up every pushed call this month. Log it.\nPushed calls are 5 to 6 a month. Even 1 extra close is $3,000/mo. That's free pipeline, no hire.\nDelete the reports this week. If the AMs get 60% of their time back, that's the AI test, and it costs nothing.",
+     "target": "musk",
+     "raw": "SEAT: Hormozi\nREPLY TO: Musk\nPOINT: Measure close rate on the calls you already have, and delete the reports in parallel. Neither one needs a hire first. (H5)\nMOVED: yes, from \"hire the closer now\" to \"run a cheap closing test first\", because Musk is right that 2 in 10 is assumed and the closer takes 3 months to ramp.\nSAYS:\nFair on the 2 in 10. It's assumed. So the founder books and follows up every pushed call this month. Log it.\nPushed calls are 5 to 6 a month. Even 1 extra close is $3,000/mo. That's free pipeline, no hire.\nDelete the reports this week. If the AMs get 60% of their time back, that's the AI test, and it costs nothing."
+    },
+    "buffett": {
+     "SEAT": "Buffett",
+     "REPLY TO": "Musk",
+     "POINT": "A no-spend 30 days is the cheap, reversible test, and the closer waits for the log (B6)",
+     "MOVED": "yes, from B with a 90-day cap to C for 30 days, because the log costs $0 and measures the 2 in 10 we only assumed.",
+     "SAYS": "You're right, Elon. I backed a closer on an assumed 2 in 10. That's my mistake.\nLog the pushed calls and delete reports first. $70k stays in the bank, about 6 weeks of costs.\nHire only if 2 in 10 holds. Don't pay $5k/mo for 3 months on a guess.",
+     "target": "musk",
+     "raw": "SEAT: Buffett\nREPLY TO: Musk\nPOINT: A no-spend 30 days is the cheap, reversible test, and the closer waits for the log (B6)\nMOVED: yes, from B with a 90-day cap to C for 30 days, because the log costs $0 and measures the 2 in 10 we only assumed.\nSAYS:\nYou're right, Elon. I backed a closer on an assumed 2 in 10. That's my mistake.\nLog the pushed calls and delete reports first. $70k stays in the bank, about 6 weeks of costs.\nHire only if 2 in 10 holds. Don't pay $5k/mo for 3 months on a guess."
+    }
+   },
+   "notes": "- **Who moved:** Hormozi went from \"hire now\" to a free 30-day closing log, because the 2 in 10 is assumed. Musk moved from the dashboard pilot to the same log. Buffett went from B with a cap to C for 30 days, on the same point.\n- **Still open:** after the free test, does the closer or the AI build get the money? Does deleting reports free the AMs' time without raising churn? The room has moved toward C-now, B-later, so the vote must show whether that is a real C or a softened B.",
+   "turns": [
+    {
+     "seat": "musk",
+     "card": {
+      "SEAT": "Musk",
+      "REPLY TO": "Hormozi",
+      "POINT": "Delete the report step first. A closer sells into a leaky delivery system, and 60% of AM time is waste. (M3)",
+      "MOVED": "no",
+      "SAYS": "Your $6,000/mo leak is real. But closer costs $5K/mo for 3 months before a single close. Reports are fixable in days.\nWhy hire to fill a bucket where 2 of 5 leavers cited \"communication\"? Delete reports, free the AMs, then add a closer.\nWhat's your close-rate evidence? Founder's 2 in 10 is assumed, not measured. Test it first.",
+      "target": "hormozi",
+      "raw": "SEAT: Musk\nREPLY TO: Hormozi\nPOINT: Delete the report step first. A closer sells into a leaky delivery system, and 60% of AM time is waste. (M3)\nMOVED: no\nSAYS:\nYour $6,000/mo leak is real. But closer costs $5K/mo for 3 months before a single close. Reports are fixable in days.\nWhy hire to fill a bucket where 2 of 5 leavers cited \"communication\"? Delete reports, free the AMs, then add a closer.\nWhat's your close-rate evidence? Founder's 2 in 10 is assumed, not measured. Test it first."
+     }
+    },
+    {
+     "seat": "hormozi",
+     "card": {
+      "SEAT": "Hormozi",
+      "REPLY TO": "Musk",
+      "POINT": "Measure close rate on the calls you already have, and delete the reports in parallel. Neither one needs a hire first. (H5)",
+      "MOVED": "yes, from \"hire the closer now\" to \"run a cheap closing test first\", because Musk is right that 2 in 10 is assumed and the closer takes 3 months to ramp.",
+      "SAYS": "Fair on the 2 in 10. It's assumed. So the founder books and follows up every pushed call this month. Log it.\nPushed calls are 5 to 6 a month. Even 1 extra close is $3,000/mo. That's free pipeline, no hire.\nDelete the reports this week. If the AMs get 60% of their time back, that's the AI test, and it costs nothing.",
+      "target": "musk",
+      "raw": "SEAT: Hormozi\nREPLY TO: Musk\nPOINT: Measure close rate on the calls you already have, and delete the reports in parallel. Neither one needs a hire first. (H5)\nMOVED: yes, from \"hire the closer now\" to \"run a cheap closing test first\", because Musk is right that 2 in 10 is assumed and the closer takes 3 months to ramp.\nSAYS:\nFair on the 2 in 10. It's assumed. So the founder books and follows up every pushed call this month. Log it.\nPushed calls are 5 to 6 a month. Even 1 extra close is $3,000/mo. That's free pipeline, no hire.\nDelete the reports this week. If the AMs get 60% of their time back, that's the AI test, and it costs nothing."
+     }
+    },
+    {
+     "seat": "musk",
+     "card": {
+      "SEAT": "Musk",
+      "REPLY TO": "Hormozi",
+      "POINT": "Hormozi's plan is right. Delete the reports now, then judge the AI spend by what the AMs do with the time. (M3)",
+      "MOVED": "yes, from \"run the dashboard test first\" to \"founder logs the pushed calls too\", because pushed calls are free data on close rate.",
+      "SAYS": "Agreed. Founder logs the 5 to 6 pushed calls, and we get a measured close rate in 30 days for $0.\nDelete the reports this week. Check AM hours freed on day 7. If it's under 40%, the AI build is dead.\nCloser is the next step only if the log shows the 2 in 10 holds.",
+      "target": "hormozi",
+      "raw": "SEAT: Musk\nREPLY TO: Hormozi\nPOINT: Hormozi's plan is right. Delete the reports now, then judge the AI spend by what the AMs do with the time. (M3)\nMOVED: yes, from \"run the dashboard test first\" to \"founder logs the pushed calls too\", because pushed calls are free data on close rate.\nSAYS:\nAgreed. Founder logs the 5 to 6 pushed calls, and we get a measured close rate in 30 days for $0.\nDelete the reports this week. Check AM hours freed on day 7. If it's under 40%, the AI build is dead.\nCloser is the next step only if the log shows the 2 in 10 holds."
+     }
+    },
+    {
+     "seat": "buffett",
+     "card": {
+      "SEAT": "Buffett",
+      "REPLY TO": "Musk",
+      "POINT": "A no-spend 30 days is the cheap, reversible test, and the closer waits for the log (B6)",
+      "MOVED": "yes, from B with a 90-day cap to C for 30 days, because the log costs $0 and measures the 2 in 10 we only assumed.",
+      "SAYS": "You're right, Elon. I backed a closer on an assumed 2 in 10. That's my mistake.\nLog the pushed calls and delete reports first. $70k stays in the bank, about 6 weeks of costs.\nHire only if 2 in 10 holds. Don't pay $5k/mo for 3 months on a guess.",
+      "target": "musk",
+      "raw": "SEAT: Buffett\nREPLY TO: Musk\nPOINT: A no-spend 30 days is the cheap, reversible test, and the closer waits for the log (B6)\nMOVED: yes, from B with a 90-day cap to C for 30 days, because the log costs $0 and measures the 2 in 10 we only assumed.\nSAYS:\nYou're right, Elon. I backed a closer on an assumed 2 in 10. That's my mistake.\nLog the pushed calls and delete reports first. $70k stays in the bank, about 6 weeks of costs.\nHire only if 2 in 10 holds. Don't pay $5k/mo for 3 months on a guess."
+     }
+    }
+   ]
+  },
+  "3": {
+   "title": "Crossfire",
+   "cards": {
+    "hormozi": {
+     "SEAT": "Hormozi",
+     "REPLY TO": "Buffett",
+     "WHERE WE NOW AGREE": "Spend nothing for 30 days. Delete the reports, and the founder logs every pushed call.",
+     "OPTION SCORES": "A 2/10 · B 7/10 · C 6/10",
+     "CONFIDENCE": "3/5",
+     "RUIN RISK": "none",
+     "MOVED": "yes, from B now to B gated at day 30, because the founder can plug the leak himself for $0 and the 2 in 10 is still only assumed (H2, H6).",
+     "MY CONDITIONS FOR YES": "- Founder takes all 5 to 6 pushed calls by Dec 23, each logged with a date and outcome.\n- On day 7 (Nov 30), AMs show at least 40% of their hours freed from reports, or the AI build is dead.\n- At least 2 closes in 10 over the logged calls, and no more than 1 client lost, or the closer hire waits.",
+     "SAYS": "Buffett, a no-spend month is fine. But it's B with a gate, not C. If nobody follows up the pushed calls, you're just leaking $3,000/mo per missed close.\nCall it C only if the leak stops. Founder logs 5 to 6 calls, we hire Dec 23 if 2 in 10 holds.",
+     "scores": {
+      "A": 2.0,
+      "B": 7.0,
+      "C": 6.0
+     },
+     "confidence": 3.0,
+     "target": "buffett",
+     "raw": "SEAT: Hormozi\nREPLY TO: Buffett\nWHERE WE NOW AGREE: Spend nothing for 30 days. Delete the reports, and the founder logs every pushed call.\nOPTION SCORES: A 2/10 · B 7/10 · C 6/10\nCONFIDENCE: 3/5\nRUIN RISK: none\nMOVED: yes, from B now to B gated at day 30, because the founder can plug the leak himself for $0 and the 2 in 10 is still only assumed (H2, H6).\nMY CONDITIONS FOR YES:\n- Founder takes all 5 to 6 pushed calls by Dec 23, each logged with a date and outcome.\n- On day 7 (Nov 30), AMs show at least 40% of their hours freed from reports, or the AI build is dead.\n- At least 2 closes in 10 over the logged calls, and no more than 1 client lost, or the closer hire waits.\nSAYS:\nBuffett, a no-spend month is fine. But it's B with a gate, not C. If nobody follows up the pushed calls, you're just leaking $3,000/mo per missed close.\nCall it C only if the leak stops. Founder logs 5 to 6 calls, we hire Dec 23 if 2 in 10 holds."
+    },
+    "musk": {
+     "SEAT": "Musk",
+     "REPLY TO": "MrBeast",
+     "WHERE WE NOW AGREE": "Keep the call and calming work. Delete only the report work. That is the 60%, and nobody here defends it.",
+     "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+     "CONFIDENCE": "4/5",
+     "RUIN RISK": "possible",
+     "MOVED": "no",
+     "MY CONDITIONS FOR YES": "1. Day 7: AMs show at least 40% of their week freed after the reports are deleted.\n2. Day 30: the logged pushed calls show a measured close rate of 2 in 10 or better.\n3. Kill number: 2 or more client exits in the 30 days, or any client who names reports as the reason. Then I stop and restore the reports.",
+     "SAYS": "Nobody gets cut. The AMs keep the calls and the calming, and that's the 40% that stays. Reports are the 60% that goes.\nMy kill number is 2 exits in 30 days against today's 1 a month. At 2, I put the reports back.",
+     "scores": {
+      "A": 2.0,
+      "B": 5.0,
+      "C": 8.0
+     },
+     "confidence": 4.0,
+     "target": "mrbeast",
+     "raw": "SEAT: Musk\nREPLY TO: MrBeast\nWHERE WE NOW AGREE: Keep the call and calming work. Delete only the report work. That is the 60%, and nobody here defends it.\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nCONFIDENCE: 4/5\nRUIN RISK: possible\nMOVED: no\nMY CONDITIONS FOR YES:\n1. Day 7: AMs show at least 40% of their week freed after the reports are deleted.\n2. Day 30: the logged pushed calls show a measured close rate of 2 in 10 or better.\n3. Kill number: 2 or more client exits in the 30 days, or any client who names reports as the reason. Then I stop and restore the reports.\nSAYS:\nNobody gets cut. The AMs keep the calls and the calming, and that's the 40% that stays. Reports are the 60% that goes.\nMy kill number is 2 exits in 30 days against today's 1 a month. At 2, I put the reports back."
+    },
+    "buffett": {
+     "SEAT": "Buffett",
+     "REPLY TO": "Zuckerberg",
+     "WHERE WE NOW AGREE": "Cap the base and read early. A closer is only worth hiring after the logged close rate holds.",
+     "OPTION SCORES": "A 2/10 · B 6/10 · C 7/10",
+     "CONFIDENCE": "4/5",
+     "RUIN RISK": "possible",
+     "MOVED": "no",
+     "MY CONDITIONS FOR YES": "- Founder logs all 5 to 6 pushed calls and the measured close rate is at least 2 in 10 by Dec 23.\n- Total closer exposure is capped at $15,000, and cash stays above $55,000.\n- No AM is cut until the report-deletion test frees at least 40% of AM hours by day 7.",
+     "SAYS": "Waiting isn't free, Mark. Margin at 16% bleeds slowly. But a 30-day free log costs $0, and a bad hire costs $15k.\nA week-6 read on a closer costs about $7k first, and I'd rather have the number before the check. Cash is 6 weeks deep, so I'm buying the number first.",
+     "scores": {
+      "A": 2.0,
+      "B": 6.0,
+      "C": 7.0
+     },
+     "confidence": 4.0,
+     "target": "zuckerberg",
+     "raw": "SEAT: Buffett\nREPLY TO: Zuckerberg\nWHERE WE NOW AGREE: Cap the base and read early. A closer is only worth hiring after the logged close rate holds.\nOPTION SCORES: A 2/10 · B 6/10 · C 7/10\nCONFIDENCE: 4/5\nRUIN RISK: possible\nMOVED: no\nMY CONDITIONS FOR YES:\n- Founder logs all 5 to 6 pushed calls and the measured close rate is at least 2 in 10 by Dec 23.\n- Total closer exposure is capped at $15,000, and cash stays above $55,000.\n- No AM is cut until the report-deletion test frees at least 40% of AM hours by day 7.\nSAYS:\nWaiting isn't free, Mark. Margin at 16% bleeds slowly. But a 30-day free log costs $0, and a bad hire costs $15k.\nA week-6 read on a closer costs about $7k first, and I'd rather have the number before the check. Cash is 6 weeks deep, so I'm buying the number first."
+    },
+    "zuckerberg": {
+     "SEAT": "Zuckerberg",
+     "REPLY TO": "Musk",
+     "WHERE WE NOW AGREE": "Log the 5 to 6 pushed calls and delete the reports first. Spend nothing until the data is in.",
+     "OPTION SCORES": "A 2/10 · B 6/10 · C 6/10",
+     "CONFIDENCE": "3/5",
+     "RUIN RISK": "none",
+     "MOVED": "yes, from B as a test now to B only after a 30-day log, because the 2 in 10 is assumed and the log costs $0.",
+     "MY CONDITIONS FOR YES": "- All 5 to 6 pushed calls a month are booked and followed up by the founder within 48 hours, with every outcome logged.\n- If at least 1 extra close lands in 30 days, post the closer role by day 35.\n- Read the log at day 15, not day 30.",
+     "SAYS": "Fair, the 2 in 10 is a guess. The log is free, so I'd run it before paying anyone.\nBut 5 to 6 calls is a small sample. One close is a signal, not proof. Read it at day 15.\nThe log won't show what a closer does with all 20 to 25 calls, so treat it as a floor.",
+     "scores": {
+      "A": 2.0,
+      "B": 6.0,
+      "C": 6.0
+     },
+     "confidence": 3.0,
+     "target": "musk",
+     "raw": "SEAT: Zuckerberg\nREPLY TO: Musk\nWHERE WE NOW AGREE: Log the 5 to 6 pushed calls and delete the reports first. Spend nothing until the data is in.\nOPTION SCORES: A 2/10 · B 6/10 · C 6/10\nCONFIDENCE: 3/5\nRUIN RISK: none\nMOVED: yes, from B as a test now to B only after a 30-day log, because the 2 in 10 is assumed and the log costs $0.\nMY CONDITIONS FOR YES:\n- All 5 to 6 pushed calls a month are booked and followed up by the founder within 48 hours, with every outcome logged.\n- If at least 1 extra close lands in 30 days, post the closer role by day 35.\n- Read the log at day 15, not day 30.\n\nSAYS:\nFair, the 2 in 10 is a guess. The log is free, so I'd run it before paying anyone.\nBut 5 to 6 calls is a small sample. One close is a signal, not proof. Read it at day 15.\nThe log won't show what a closer does with all 20 to 25 calls, so treat it as a floor."
+    },
+    "mrbeast": {
+     "SEAT": "MrBeast",
+     "REPLY TO": "Hormozi",
+     "WHERE WE NOW AGREE": "Delete the reports this week and log the 5 to 6 pushed calls. It costs $0.",
+     "OPTION SCORES": "A 2/10 · B 5/10 · C 7/10",
+     "CONFIDENCE": "3/5",
+     "RUIN RISK": "none",
+     "MOVED": "yes, from \"fix the leads first\" to \"free the AMs first\", because the freed time is the cheapest retention test (MB2, MB3).",
+     "MY CONDITIONS FOR YES": "- Day 7: AM hours freed are at least 40%, or the AI build is dead.\n- Every client gets a 15-minute live call from an AM within 14 days, and we log how many say they'd renew.\n- By day 30, churn is 0 or 1 clients and the pushed-call close rate is logged.",
+     "SAYS": "Give the 60% back as calls. Every client gets a face-to-face check-in in 2 weeks. A report is a boring first minute, and a call isn't.\n2 of 5 leavers said \"communication\". So the metric is how many of the 18 clients heard from a human this month, and I want that at 18.",
+     "scores": {
+      "A": 2.0,
+      "B": 5.0,
+      "C": 7.0
+     },
+     "confidence": 3.0,
+     "target": "hormozi",
+     "raw": "SEAT: MrBeast\nREPLY TO: Hormozi\nWHERE WE NOW AGREE: Delete the reports this week and log the 5 to 6 pushed calls. It costs $0.\n\nOPTION SCORES: A 2/10 · B 5/10 · C 7/10\nCONFIDENCE: 3/5\nRUIN RISK: none\nMOVED: yes, from \"fix the leads first\" to \"free the AMs first\", because the freed time is the cheapest retention test (MB2, MB3).\n\nMY CONDITIONS FOR YES:\n- Day 7: AM hours freed are at least 40%, or the AI build is dead.\n- Every client gets a 15-minute live call from an AM within 14 days, and we log how many say they'd renew.\n- By day 30, churn is 0 or 1 clients and the pushed-call close rate is logged.\n\nSAYS:\nGive the 60% back as calls. Every client gets a face-to-face check-in in 2 weeks. A report is a boring first minute, and a call isn't.\n2 of 5 leavers said \"communication\". So the metric is how many of the 18 clients heard from a human this month, and I want that at 18."
+    }
+   },
+   "notes": "",
+   "turns": [
+    {
+     "seat": "hormozi",
+     "card": {
+      "SEAT": "Hormozi",
+      "REPLY TO": "Buffett",
+      "WHERE WE NOW AGREE": "Spend nothing for 30 days. Delete the reports, and the founder logs every pushed call.",
+      "OPTION SCORES": "A 2/10 · B 7/10 · C 6/10",
+      "CONFIDENCE": "3/5",
+      "RUIN RISK": "none",
+      "MOVED": "yes, from B now to B gated at day 30, because the founder can plug the leak himself for $0 and the 2 in 10 is still only assumed (H2, H6).",
+      "MY CONDITIONS FOR YES": "- Founder takes all 5 to 6 pushed calls by Dec 23, each logged with a date and outcome.\n- On day 7 (Nov 30), AMs show at least 40% of their hours freed from reports, or the AI build is dead.\n- At least 2 closes in 10 over the logged calls, and no more than 1 client lost, or the closer hire waits.",
+      "SAYS": "Buffett, a no-spend month is fine. But it's B with a gate, not C. If nobody follows up the pushed calls, you're just leaking $3,000/mo per missed close.\nCall it C only if the leak stops. Founder logs 5 to 6 calls, we hire Dec 23 if 2 in 10 holds.",
+      "scores": {
+       "A": 2.0,
+       "B": 7.0,
+       "C": 6.0
+      },
+      "confidence": 3.0,
+      "target": "buffett",
+      "raw": "SEAT: Hormozi\nREPLY TO: Buffett\nWHERE WE NOW AGREE: Spend nothing for 30 days. Delete the reports, and the founder logs every pushed call.\nOPTION SCORES: A 2/10 · B 7/10 · C 6/10\nCONFIDENCE: 3/5\nRUIN RISK: none\nMOVED: yes, from B now to B gated at day 30, because the founder can plug the leak himself for $0 and the 2 in 10 is still only assumed (H2, H6).\nMY CONDITIONS FOR YES:\n- Founder takes all 5 to 6 pushed calls by Dec 23, each logged with a date and outcome.\n- On day 7 (Nov 30), AMs show at least 40% of their hours freed from reports, or the AI build is dead.\n- At least 2 closes in 10 over the logged calls, and no more than 1 client lost, or the closer hire waits.\nSAYS:\nBuffett, a no-spend month is fine. But it's B with a gate, not C. If nobody follows up the pushed calls, you're just leaking $3,000/mo per missed close.\nCall it C only if the leak stops. Founder logs 5 to 6 calls, we hire Dec 23 if 2 in 10 holds."
+     }
+    },
+    {
+     "seat": "musk",
+     "card": {
+      "SEAT": "Musk",
+      "REPLY TO": "MrBeast",
+      "WHERE WE NOW AGREE": "Keep the call and calming work. Delete only the report work. That is the 60%, and nobody here defends it.",
+      "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+      "CONFIDENCE": "4/5",
+      "RUIN RISK": "possible",
+      "MOVED": "no",
+      "MY CONDITIONS FOR YES": "1. Day 7: AMs show at least 40% of their week freed after the reports are deleted.\n2. Day 30: the logged pushed calls show a measured close rate of 2 in 10 or better.\n3. Kill number: 2 or more client exits in the 30 days, or any client who names reports as the reason. Then I stop and restore the reports.",
+      "SAYS": "Nobody gets cut. The AMs keep the calls and the calming, and that's the 40% that stays. Reports are the 60% that goes.\nMy kill number is 2 exits in 30 days against today's 1 a month. At 2, I put the reports back.",
+      "scores": {
+       "A": 2.0,
+       "B": 5.0,
+       "C": 8.0
+      },
+      "confidence": 4.0,
+      "target": "mrbeast",
+      "raw": "SEAT: Musk\nREPLY TO: MrBeast\nWHERE WE NOW AGREE: Keep the call and calming work. Delete only the report work. That is the 60%, and nobody here defends it.\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nCONFIDENCE: 4/5\nRUIN RISK: possible\nMOVED: no\nMY CONDITIONS FOR YES:\n1. Day 7: AMs show at least 40% of their week freed after the reports are deleted.\n2. Day 30: the logged pushed calls show a measured close rate of 2 in 10 or better.\n3. Kill number: 2 or more client exits in the 30 days, or any client who names reports as the reason. Then I stop and restore the reports.\nSAYS:\nNobody gets cut. The AMs keep the calls and the calming, and that's the 40% that stays. Reports are the 60% that goes.\nMy kill number is 2 exits in 30 days against today's 1 a month. At 2, I put the reports back."
+     }
+    },
+    {
+     "seat": "buffett",
+     "card": {
+      "SEAT": "Buffett",
+      "REPLY TO": "Zuckerberg",
+      "WHERE WE NOW AGREE": "Cap the base and read early. A closer is only worth hiring after the logged close rate holds.",
+      "OPTION SCORES": "A 2/10 · B 6/10 · C 7/10",
+      "CONFIDENCE": "4/5",
+      "RUIN RISK": "possible",
+      "MOVED": "no",
+      "MY CONDITIONS FOR YES": "- Founder logs all 5 to 6 pushed calls and the measured close rate is at least 2 in 10 by Dec 23.\n- Total closer exposure is capped at $15,000, and cash stays above $55,000.\n- No AM is cut until the report-deletion test frees at least 40% of AM hours by day 7.",
+      "SAYS": "Waiting isn't free, Mark. Margin at 16% bleeds slowly. But a 30-day free log costs $0, and a bad hire costs $15k.\nA week-6 read on a closer costs about $7k first, and I'd rather have the number before the check. Cash is 6 weeks deep, so I'm buying the number first.",
+      "scores": {
+       "A": 2.0,
+       "B": 6.0,
+       "C": 7.0
+      },
+      "confidence": 4.0,
+      "target": "zuckerberg",
+      "raw": "SEAT: Buffett\nREPLY TO: Zuckerberg\nWHERE WE NOW AGREE: Cap the base and read early. A closer is only worth hiring after the logged close rate holds.\nOPTION SCORES: A 2/10 · B 6/10 · C 7/10\nCONFIDENCE: 4/5\nRUIN RISK: possible\nMOVED: no\nMY CONDITIONS FOR YES:\n- Founder logs all 5 to 6 pushed calls and the measured close rate is at least 2 in 10 by Dec 23.\n- Total closer exposure is capped at $15,000, and cash stays above $55,000.\n- No AM is cut until the report-deletion test frees at least 40% of AM hours by day 7.\nSAYS:\nWaiting isn't free, Mark. Margin at 16% bleeds slowly. But a 30-day free log costs $0, and a bad hire costs $15k.\nA week-6 read on a closer costs about $7k first, and I'd rather have the number before the check. Cash is 6 weeks deep, so I'm buying the number first."
+     }
+    },
+    {
+     "seat": "zuckerberg",
+     "card": {
+      "SEAT": "Zuckerberg",
+      "REPLY TO": "Musk",
+      "WHERE WE NOW AGREE": "Log the 5 to 6 pushed calls and delete the reports first. Spend nothing until the data is in.",
+      "OPTION SCORES": "A 2/10 · B 6/10 · C 6/10",
+      "CONFIDENCE": "3/5",
+      "RUIN RISK": "none",
+      "MOVED": "yes, from B as a test now to B only after a 30-day log, because the 2 in 10 is assumed and the log costs $0.",
+      "MY CONDITIONS FOR YES": "- All 5 to 6 pushed calls a month are booked and followed up by the founder within 48 hours, with every outcome logged.\n- If at least 1 extra close lands in 30 days, post the closer role by day 35.\n- Read the log at day 15, not day 30.",
+      "SAYS": "Fair, the 2 in 10 is a guess. The log is free, so I'd run it before paying anyone.\nBut 5 to 6 calls is a small sample. One close is a signal, not proof. Read it at day 15.\nThe log won't show what a closer does with all 20 to 25 calls, so treat it as a floor.",
+      "scores": {
+       "A": 2.0,
+       "B": 6.0,
+       "C": 6.0
+      },
+      "confidence": 3.0,
+      "target": "musk",
+      "raw": "SEAT: Zuckerberg\nREPLY TO: Musk\nWHERE WE NOW AGREE: Log the 5 to 6 pushed calls and delete the reports first. Spend nothing until the data is in.\nOPTION SCORES: A 2/10 · B 6/10 · C 6/10\nCONFIDENCE: 3/5\nRUIN RISK: none\nMOVED: yes, from B as a test now to B only after a 30-day log, because the 2 in 10 is assumed and the log costs $0.\nMY CONDITIONS FOR YES:\n- All 5 to 6 pushed calls a month are booked and followed up by the founder within 48 hours, with every outcome logged.\n- If at least 1 extra close lands in 30 days, post the closer role by day 35.\n- Read the log at day 15, not day 30.\n\nSAYS:\nFair, the 2 in 10 is a guess. The log is free, so I'd run it before paying anyone.\nBut 5 to 6 calls is a small sample. One close is a signal, not proof. Read it at day 15.\nThe log won't show what a closer does with all 20 to 25 calls, so treat it as a floor."
+     }
+    },
+    {
+     "seat": "mrbeast",
+     "card": {
+      "SEAT": "MrBeast",
+      "REPLY TO": "Hormozi",
+      "WHERE WE NOW AGREE": "Delete the reports this week and log the 5 to 6 pushed calls. It costs $0.",
+      "OPTION SCORES": "A 2/10 · B 5/10 · C 7/10",
+      "CONFIDENCE": "3/5",
+      "RUIN RISK": "none",
+      "MOVED": "yes, from \"fix the leads first\" to \"free the AMs first\", because the freed time is the cheapest retention test (MB2, MB3).",
+      "MY CONDITIONS FOR YES": "- Day 7: AM hours freed are at least 40%, or the AI build is dead.\n- Every client gets a 15-minute live call from an AM within 14 days, and we log how many say they'd renew.\n- By day 30, churn is 0 or 1 clients and the pushed-call close rate is logged.",
+      "SAYS": "Give the 60% back as calls. Every client gets a face-to-face check-in in 2 weeks. A report is a boring first minute, and a call isn't.\n2 of 5 leavers said \"communication\". So the metric is how many of the 18 clients heard from a human this month, and I want that at 18.",
+      "scores": {
+       "A": 2.0,
+       "B": 5.0,
+       "C": 7.0
+      },
+      "confidence": 3.0,
+      "target": "hormozi",
+      "raw": "SEAT: MrBeast\nREPLY TO: Hormozi\nWHERE WE NOW AGREE: Delete the reports this week and log the 5 to 6 pushed calls. It costs $0.\n\nOPTION SCORES: A 2/10 · B 5/10 · C 7/10\nCONFIDENCE: 3/5\nRUIN RISK: none\nMOVED: yes, from \"fix the leads first\" to \"free the AMs first\", because the freed time is the cheapest retention test (MB2, MB3).\n\nMY CONDITIONS FOR YES:\n- Day 7: AM hours freed are at least 40%, or the AI build is dead.\n- Every client gets a 15-minute live call from an AM within 14 days, and we log how many say they'd renew.\n- By day 30, churn is 0 or 1 clients and the pushed-call close rate is logged.\n\nSAYS:\nGive the 60% back as calls. Every client gets a face-to-face check-in in 2 weeks. A report is a boring first minute, and a call isn't.\n2 of 5 leavers said \"communication\". So the metric is how many of the 18 clients heard from a human this month, and I want that at 18."
+     }
+    }
+   ]
+  },
+  "4": {
+   "title": "The vote",
+   "cards": {
+    "hormozi": {
+     "SEAT": "Hormozi",
+     "VOTE": "B",
+     "OPTION SCORES": "A 2/10 · B 7/10 · C 4/10",
+     "IF OUTVOTED": "If C wins, the founder books and follows up every pushed call within 24 hours. He logs all 5 to 6 a month. If the close rate is 2 in 10 or better by Dec 23, the closer gets hired. If A wins, it runs on 3 accounts only, with exits at 1 a month or fewer.",
+     "ONE LINE FOR THE FOUNDER": "You don't have a report problem, you have a follow-up problem. Every pushed call is about $3,000/mo you never collect (H5).",
+     "SAYS": "I vote B, hire the closer. 5 to 6 pushed calls a month is the leak, and a closer plugs it.\nThe room moved me on the free log, not on the vote. I run the log this month anyway. A is the worst of the three: it risks $54K of revenue to save $8.4K.",
+     "scores": {
+      "A": 2.0,
+      "B": 7.0,
+      "C": 4.0
+     },
+     "pick": "B",
+     "raw": "SEAT: Hormozi\nVOTE: B\nOPTION SCORES: A 2/10 · B 7/10 · C 4/10\nIF OUTVOTED: If C wins, the founder books and follows up every pushed call within 24 hours. He logs all 5 to 6 a month. If the close rate is 2 in 10 or better by Dec 23, the closer gets hired. If A wins, it runs on 3 accounts only, with exits at 1 a month or fewer.\nONE LINE FOR THE FOUNDER: You don't have a report problem, you have a follow-up problem. Every pushed call is about $3,000/mo you never collect (H5).\nSAYS:\nI vote B, hire the closer. 5 to 6 pushed calls a month is the leak, and a closer plugs it.\nThe room moved me on the free log, not on the vote. I run the log this month anyway. A is the worst of the three: it risks $54K of revenue to save $8.4K (H4)."
+    },
+    "musk": {
+     "SEAT": "Musk",
+     "VOTE": "C",
+     "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+     "IF OUTVOTED": "If B wins, don't pay the closer until the founder's logged pushed calls show 2 in 10 at day 30. If A wins, don't sign the build unless reports deleted by day 7 free less than 40% of AM hours.",
+     "ONE LINE FOR THE FOUNDER": "Delete the step before you buy software or staff for it. The reports may not need to exist.",
+     "SAYS": "C. Deleting reports costs $0 and takes a week. I'm not paying $14K to automate a step that shouldn't exist.\nCloser waits for the logged close rate. Two exits in 30 days and I put the reports back.",
+     "scores": {
+      "A": 2.0,
+      "B": 5.0,
+      "C": 8.0
+     },
+     "pick": "C",
+     "raw": "SEAT: Musk\nVOTE: C\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nIF OUTVOTED: If B wins, don't pay the closer until the founder's logged pushed calls show 2 in 10 at day 30. If A wins, don't sign the build unless reports deleted by day 7 free less than 40% of AM hours.\nONE LINE FOR THE FOUNDER: Delete the step before you buy software or staff for it. The reports may not need to exist.\nSAYS:\nC. Deleting reports costs $0 and takes a week. I'm not paying $14K to automate a step that shouldn't exist (M3, M4).\nCloser waits for the logged close rate. Two exits in 30 days and I put the reports back."
+    },
+    "buffett": {
+     "SEAT": "Buffett",
+     "VOTE": "C",
+     "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+     "IF OUTVOTED": "If B wins, the closer's base must be capped at 90 days. Don't sign until the founder's pushed-call log shows at least 1 close from 5 to 6 calls by day 30. If A wins, pilot it on 3 accounts first. Also keep at least $50,000 in the bank at all times (B4).",
+     "ONE LINE FOR THE FOUNDER": "You have 6 weeks of cash and 16% margin, so buy the number before you buy the hire or the build (B1, B4). That's my translation of an investor's rule into an operating decision.",
+     "SAYS": "C. Keep the cash. The log, the deleted reports and the check-ins cost $0, and I'd have the real close rate before I spend $5k a month on a guess.\nHormozi's right that this is a gated B. I'd still hold the $70k until the number shows up.",
+     "scores": {
+      "A": 2.0,
+      "B": 5.0,
+      "C": 8.0
+     },
+     "pick": "C",
+     "raw": "SEAT: Buffett\nVOTE: C\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nIF OUTVOTED: If B wins, the closer's base must be capped at 90 days. Don't sign until the founder's pushed-call log shows at least 1 close from 5 to 6 calls by day 30. If A wins, pilot it on 3 accounts first. Also keep at least $50,000 in the bank at all times (B4).\nONE LINE FOR THE FOUNDER: You have 6 weeks of cash and 16% margin, so buy the number before you buy the hire or the build (B1, B4). That's my translation of an investor's rule into an operating decision.\nSAYS:\nC. Keep the cash. The log, the deleted reports and the check-ins cost $0, and I'd have the real close rate before I spend $5k a month on a guess.\nHormozi's right that this is a gated B. I'd still hold the $70k until the number shows up."
+    },
+    "zuckerberg": {
+     "SEAT": "Zuckerberg",
+     "VOTE": "B",
+     "OPTION SCORES": "A 2/10 · B 7/10 · C 5/10",
+     "IF OUTVOTED": "If C wins, the founder logs and follows up all 5 to 6 pushed calls. I'd read the close count at day 15 and put the closer on payroll by Dec 23 if at least 1 closes.",
+     "ONE LINE FOR THE FOUNDER": "The free log is only a floor, because it can't show what a closer does with all 20 to 25 calls (Z6, Z8).",
+     "SAYS": "B. The log is free and I'd run it, but it can't test a closer on all 20 to 25 calls.\nNobody's moved me off B. I'd keep the $5K base capped at 90 days and read it at week 6.",
+     "scores": {
+      "A": 2.0,
+      "B": 7.0,
+      "C": 5.0
+     },
+     "pick": "B",
+     "raw": "SEAT: Zuckerberg\nVOTE: B\nOPTION SCORES: A 2/10 · B 7/10 · C 5/10\nIF OUTVOTED: If C wins, the founder logs and follows up all 5 to 6 pushed calls. I'd read the close count at day 15 and put the closer on payroll by Dec 23 if at least 1 closes.\nONE LINE FOR THE FOUNDER: The free log is only a floor, because it can't show what a closer does with all 20 to 25 calls (Z6, Z8).\nSAYS:\nB. The log is free and I'd run it, but it can't test a closer on all 20 to 25 calls.\nNobody's moved me off B. I'd keep the $5K base capped at 90 days and read it at week 6."
+    },
+    "mrbeast": {
+     "SEAT": "MrBeast",
+     "VOTE": "C",
+     "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+     "IF OUTVOTED": "If B wins, the founder's log of the 5 to 6 pushed calls must show at least 1 close by day 15. Without that, the closer isn't hired.",
+     "ONE LINE FOR THE FOUNDER": "Churn is 1 client a month and 2 of 5 leavers said \"communication\", so don't cut the people who talk to clients. Measure how many of your 18 clients heard from a human this month. (MB6, MB5)",
+     "SAYS": "C. Keep the cash. Nobody has measured the 2 in 10 close rate yet, so I'm not spending $5K/mo on a guess.\nA is the worst of the three. The AMs are the only humans your clients hear from, and churn is already 1 a month.",
+     "scores": {
+      "A": 2.0,
+      "B": 5.0,
+      "C": 8.0
+     },
+     "pick": "C",
+     "raw": "SEAT: MrBeast\nVOTE: C\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nIF OUTVOTED: If B wins, the founder's log of the 5 to 6 pushed calls must show at least 1 close by day 15. Without that, the closer isn't hired.\nONE LINE FOR THE FOUNDER: Churn is 1 client a month and 2 of 5 leavers said \"communication\", so don't cut the people who talk to clients. Measure how many of your 18 clients heard from a human this month. (MB6, MB5)\nSAYS:\nC. Keep the cash. Nobody has measured the 2 in 10 close rate yet, so I'm not spending $5K/mo on a guess.\nA is the worst of the three. The AMs are the only humans your clients hear from, and churn is already 1 a month."
+    }
+   },
+   "notes": "Winner on score: C (6.4), then B (5.9), A (2.0). Each seat's IF OUTVOTED, and whether the verdict takes it:\n- **Hormozi:** founder follows up every pushed call within 24 hours and logs all 5 to 6; hire if 2 in 10 or better by Dec 23. Taken. His A-on-3-accounts line is left out: no seat backs A.\n- **Zuckerberg:** read the close count at day 15, closer on payroll by Dec 23 if at least 1 closes. Taken as the day-15 read. He also wants the closer's base capped at 90 days. Taken.\n- **Musk:** no closer pay until the log shows 2 in 10 at day 30; reports deleted by day 7 must free at least 40% of AM hours. Taken.\n- **Buffett:** closer base capped at 90 days, cash never under $50,000, pilot any AI on 3 accounts first. Taken (the cash floor and the 3-account pilot).\n- **MrBeast:** at least 1 close in the log by day 15 before any hire. Taken, and it matches Zuckerberg's read.\n- **Not taken:** the $14,000 build and any AM cuts. Nobody backs A, so they stay out of the verdict.",
+   "turns": [
+    {
+     "seat": "hormozi",
+     "card": {
+      "SEAT": "Hormozi",
+      "VOTE": "B",
+      "OPTION SCORES": "A 2/10 · B 7/10 · C 4/10",
+      "IF OUTVOTED": "If C wins, the founder books and follows up every pushed call within 24 hours. He logs all 5 to 6 a month. If the close rate is 2 in 10 or better by Dec 23, the closer gets hired. If A wins, it runs on 3 accounts only, with exits at 1 a month or fewer.",
+      "ONE LINE FOR THE FOUNDER": "You don't have a report problem, you have a follow-up problem. Every pushed call is about $3,000/mo you never collect (H5).",
+      "SAYS": "I vote B, hire the closer. 5 to 6 pushed calls a month is the leak, and a closer plugs it.\nThe room moved me on the free log, not on the vote. I run the log this month anyway. A is the worst of the three: it risks $54K of revenue to save $8.4K.",
+      "scores": {
+       "A": 2.0,
+       "B": 7.0,
+       "C": 4.0
+      },
+      "pick": "B",
+      "raw": "SEAT: Hormozi\nVOTE: B\nOPTION SCORES: A 2/10 · B 7/10 · C 4/10\nIF OUTVOTED: If C wins, the founder books and follows up every pushed call within 24 hours. He logs all 5 to 6 a month. If the close rate is 2 in 10 or better by Dec 23, the closer gets hired. If A wins, it runs on 3 accounts only, with exits at 1 a month or fewer.\nONE LINE FOR THE FOUNDER: You don't have a report problem, you have a follow-up problem. Every pushed call is about $3,000/mo you never collect (H5).\nSAYS:\nI vote B, hire the closer. 5 to 6 pushed calls a month is the leak, and a closer plugs it.\nThe room moved me on the free log, not on the vote. I run the log this month anyway. A is the worst of the three: it risks $54K of revenue to save $8.4K (H4)."
+     }
+    },
+    {
+     "seat": "musk",
+     "card": {
+      "SEAT": "Musk",
+      "VOTE": "C",
+      "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+      "IF OUTVOTED": "If B wins, don't pay the closer until the founder's logged pushed calls show 2 in 10 at day 30. If A wins, don't sign the build unless reports deleted by day 7 free less than 40% of AM hours.",
+      "ONE LINE FOR THE FOUNDER": "Delete the step before you buy software or staff for it. The reports may not need to exist.",
+      "SAYS": "C. Deleting reports costs $0 and takes a week. I'm not paying $14K to automate a step that shouldn't exist.\nCloser waits for the logged close rate. Two exits in 30 days and I put the reports back.",
+      "scores": {
+       "A": 2.0,
+       "B": 5.0,
+       "C": 8.0
+      },
+      "pick": "C",
+      "raw": "SEAT: Musk\nVOTE: C\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nIF OUTVOTED: If B wins, don't pay the closer until the founder's logged pushed calls show 2 in 10 at day 30. If A wins, don't sign the build unless reports deleted by day 7 free less than 40% of AM hours.\nONE LINE FOR THE FOUNDER: Delete the step before you buy software or staff for it. The reports may not need to exist.\nSAYS:\nC. Deleting reports costs $0 and takes a week. I'm not paying $14K to automate a step that shouldn't exist (M3, M4).\nCloser waits for the logged close rate. Two exits in 30 days and I put the reports back."
+     }
+    },
+    {
+     "seat": "buffett",
+     "card": {
+      "SEAT": "Buffett",
+      "VOTE": "C",
+      "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+      "IF OUTVOTED": "If B wins, the closer's base must be capped at 90 days. Don't sign until the founder's pushed-call log shows at least 1 close from 5 to 6 calls by day 30. If A wins, pilot it on 3 accounts first. Also keep at least $50,000 in the bank at all times (B4).",
+      "ONE LINE FOR THE FOUNDER": "You have 6 weeks of cash and 16% margin, so buy the number before you buy the hire or the build (B1, B4). That's my translation of an investor's rule into an operating decision.",
+      "SAYS": "C. Keep the cash. The log, the deleted reports and the check-ins cost $0, and I'd have the real close rate before I spend $5k a month on a guess.\nHormozi's right that this is a gated B. I'd still hold the $70k until the number shows up.",
+      "scores": {
+       "A": 2.0,
+       "B": 5.0,
+       "C": 8.0
+      },
+      "pick": "C",
+      "raw": "SEAT: Buffett\nVOTE: C\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nIF OUTVOTED: If B wins, the closer's base must be capped at 90 days. Don't sign until the founder's pushed-call log shows at least 1 close from 5 to 6 calls by day 30. If A wins, pilot it on 3 accounts first. Also keep at least $50,000 in the bank at all times (B4).\nONE LINE FOR THE FOUNDER: You have 6 weeks of cash and 16% margin, so buy the number before you buy the hire or the build (B1, B4). That's my translation of an investor's rule into an operating decision.\nSAYS:\nC. Keep the cash. The log, the deleted reports and the check-ins cost $0, and I'd have the real close rate before I spend $5k a month on a guess.\nHormozi's right that this is a gated B. I'd still hold the $70k until the number shows up."
+     }
+    },
+    {
+     "seat": "zuckerberg",
+     "card": {
+      "SEAT": "Zuckerberg",
+      "VOTE": "B",
+      "OPTION SCORES": "A 2/10 · B 7/10 · C 5/10",
+      "IF OUTVOTED": "If C wins, the founder logs and follows up all 5 to 6 pushed calls. I'd read the close count at day 15 and put the closer on payroll by Dec 23 if at least 1 closes.",
+      "ONE LINE FOR THE FOUNDER": "The free log is only a floor, because it can't show what a closer does with all 20 to 25 calls (Z6, Z8).",
+      "SAYS": "B. The log is free and I'd run it, but it can't test a closer on all 20 to 25 calls.\nNobody's moved me off B. I'd keep the $5K base capped at 90 days and read it at week 6.",
+      "scores": {
+       "A": 2.0,
+       "B": 7.0,
+       "C": 5.0
+      },
+      "pick": "B",
+      "raw": "SEAT: Zuckerberg\nVOTE: B\nOPTION SCORES: A 2/10 · B 7/10 · C 5/10\nIF OUTVOTED: If C wins, the founder logs and follows up all 5 to 6 pushed calls. I'd read the close count at day 15 and put the closer on payroll by Dec 23 if at least 1 closes.\nONE LINE FOR THE FOUNDER: The free log is only a floor, because it can't show what a closer does with all 20 to 25 calls (Z6, Z8).\nSAYS:\nB. The log is free and I'd run it, but it can't test a closer on all 20 to 25 calls.\nNobody's moved me off B. I'd keep the $5K base capped at 90 days and read it at week 6."
+     }
+    },
+    {
+     "seat": "mrbeast",
+     "card": {
+      "SEAT": "MrBeast",
+      "VOTE": "C",
+      "OPTION SCORES": "A 2/10 · B 5/10 · C 8/10",
+      "IF OUTVOTED": "If B wins, the founder's log of the 5 to 6 pushed calls must show at least 1 close by day 15. Without that, the closer isn't hired.",
+      "ONE LINE FOR THE FOUNDER": "Churn is 1 client a month and 2 of 5 leavers said \"communication\", so don't cut the people who talk to clients. Measure how many of your 18 clients heard from a human this month. (MB6, MB5)",
+      "SAYS": "C. Keep the cash. Nobody has measured the 2 in 10 close rate yet, so I'm not spending $5K/mo on a guess.\nA is the worst of the three. The AMs are the only humans your clients hear from, and churn is already 1 a month.",
+      "scores": {
+       "A": 2.0,
+       "B": 5.0,
+       "C": 8.0
+      },
+      "pick": "C",
+      "raw": "SEAT: MrBeast\nVOTE: C\nOPTION SCORES: A 2/10 · B 5/10 · C 8/10\nIF OUTVOTED: If B wins, the founder's log of the 5 to 6 pushed calls must show at least 1 close by day 15. Without that, the closer isn't hired.\nONE LINE FOR THE FOUNDER: Churn is 1 client a month and 2 of 5 leavers said \"communication\", so don't cut the people who talk to clients. Measure how many of your 18 clients heard from a human this month. (MB6, MB5)\nSAYS:\nC. Keep the cash. Nobody has measured the 2 in 10 close rate yet, so I'm not spending $5K/mo on a guess.\nA is the worst of the three. The AMs are the only humans your clients hear from, and churn is already 1 a month."
+     }
+    }
+   ]
+  }
+ },
+ "verdict": {
+  "LABEL": "WAIT, until the founder's own pushed-call log shows 1 close or more by day 15 (Dec 8) and 2 in 10 or better by Dec 23, which turns it into GO on B.",
+  "THE VERDICT": "Option C: keep the $70,000 and fire nobody. Stop the weekly written reports and take every pushed call yourself, then let the logged close rate decide on the closer.",
+  "NEXT STEP THIS WEEK": "By Wednesday Nov 25, stop sending the weekly reports to all 18 clients, book the 5 to 6 pushed calls within 24 hours, and log each one with its outcome.",
+  "CONDITIONS": "1. Monday Nov 30: the AMs show at least 40% of their week freed, or the $14,000 AI build is dead.\n2. By Dec 8 the log shows at least 1 close, and by Dec 23 it shows 2 in 10 or better. Only then hire the closer, with the base capped at 90 days.\n3. Cash never drops under $50,000, and every client hears from a human (a 15-minute AM call) within 14 days.",
+  "KILL IT IF": "2 clients leave in 30 days (today it is 1 a month), or any client names the missing reports as the reason. Put the reports back.",
+  "MINORITY REPORT": "Zuckerberg (with Hormozi) says the free log is only a floor. It tests 5 to 6 calls, not what a closer does with all 20 to 25, so waiting a month may cost closes you never see.",
+  "SHARPEST CLASH": "Musk vs Hormozi: \"You don't have a report problem, you have a call problem.\" against \"Founder's 2 in 10 is assumed, not measured. Test it first.\""
+ },
+ "score": {
+  "round": 4,
+  "options": {
+   "A": 2.0,
+   "B": 5.9,
+   "C": 6.4
+  },
+  "math": {
+   "A": "(3x2 + 2x2 + 3x2 + 2x2 + 1x2) / 11 = 2.0",
+   "B": "(3x7 + 2x5 + 3x5 + 2x7 + 1x5) / 11 = 5.9",
+   "C": "(3x4 + 2x8 + 3x8 + 2x5 + 1x8) / 11 = 6.4"
+  },
+  "top": "C",
+  "label": "DON'T DO IT",
+  "overrides": [
+   "C is the hold option (Neither, keep the cash), so the council says don't spend."
+  ],
+  "spread": 4.0,
+  "confidence": 7,
+  "votes": {
+   "hormozi": "B",
+   "musk": "C",
+   "buffett": "C",
+   "zuckerberg": "B",
+   "mrbeast": "C"
+  },
+  "picks": {
+   "hormozi": "B",
+   "musk": "C",
+   "buffett": "C",
+   "zuckerberg": "B",
+   "mrbeast": "C"
+  },
+  "support": null
+ },
+ "chat": [
+  {
+   "who": "Chair",
+   "text": "Decision: A replace AMs with AI, B hire a closer, C neither and keep the cash. The seats are AI personas, not the real people.",
+   "round": 0
+  },
+  {
+   "who": "Hormozi",
+   "text": "B. You don't have a report problem, you have a call problem. Half your calls get pushed, and that's about $6,000/mo of MRR leaking.",
+   "round": 1
+  },
+  {
+   "who": "Hormozi",
+   "text": "A saves $8,400 but risks churn on $54,000 of revenue. Fix the leak first, then automate the reports.",
+   "round": 1
+  },
+  {
+   "who": "Musk",
+   "text": "I'd delete the reports before I fire anyone. 60% of AM time is a step that shouldn't exist.",
+   "round": 1
+  },
+  {
+   "who": "Musk",
+   "text": "$14K and 6 weeks is automating waste. Dashboards on 3 clients take days. Run that first.",
+   "round": 1
+  },
+  {
+   "who": "Buffett",
+   "text": "B, with a 90-day cap. A burns $23k and leaves you 4 weeks of cash. A bad hire costs you $15k at most.",
+   "round": 1
+  },
+  {
+   "who": "Buffett",
+   "text": "Founder, I get being tired of reports. Pilot the AI on 3 accounts first. Don't fire anyone on a hunch.",
+   "round": 1
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "B, but as a test. 20 to 25 calls a month and half get pushed is free volume you're leaving on the floor.",
+   "round": 1
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "Cap the base for 90 days. I'd read close rate by week 6, not month 3.",
+   "round": 1
+  },
+  {
+   "who": "MrBeast",
+   "text": "Don't cut the people who talk to clients, because churn is already 1 a month. Fix the leads first.",
+   "round": 1
+  },
+  {
+   "who": "Chair",
+   "text": "Cruxes: can the report work be deleted cheaply, is the pushed half of calls real pipeline, and does a closer really hit 2 in 10.",
+   "round": 1
+  },
+  {
+   "who": "Chair",
+   "text": "Four seats back B. Musk backs a cheap A. Buffett and Musk, say what a no-spend quarter beats.",
+   "round": 1
+  },
+  {
+   "who": "Chair",
+   "text": "Only three seats are in, so one thread. Musk takes on Hormozi: delete the reports first, or fix the closing leak first?",
+   "round": 2
+  },
+  {
+   "who": "Musk",
+   "text": "Your $6,000/mo leak is real. But closer costs $5K/mo for 3 months before a single close. Reports are fixable in days.",
+   "round": 2
+  },
+  {
+   "who": "Musk",
+   "text": "Why hire to fill a bucket where 2 of 5 leavers cited \"communication\"? Delete reports, free the AMs, then add a closer.",
+   "round": 2
+  },
+  {
+   "who": "Musk",
+   "text": "What's your close-rate evidence? Founder's 2 in 10 is assumed, not measured. Test it first.",
+   "round": 2
+  },
+  {
+   "who": "Hormozi",
+   "text": "Fair on the 2 in 10. It's assumed. So the founder books and follows up every pushed call this month. Log it.",
+   "round": 2
+  },
+  {
+   "who": "Hormozi",
+   "text": "Pushed calls are 5 to 6 a month. Even 1 extra close is $3,000/mo. That's free pipeline, no hire.",
+   "round": 2
+  },
+  {
+   "who": "Hormozi",
+   "text": "Delete the reports this week. If the AMs get 60% of their time back, that's the AI test, and it costs nothing.",
+   "round": 2
+  },
+  {
+   "who": "Musk",
+   "text": "Agreed. Founder logs the 5 to 6 pushed calls, and we get a measured close rate in 30 days for $0.",
+   "round": 2
+  },
+  {
+   "who": "Musk",
+   "text": "Delete the reports this week. Check AM hours freed on day 7. If it's under 40%, the AI build is dead.",
+   "round": 2
+  },
+  {
+   "who": "Musk",
+   "text": "Closer is the next step only if the log shows the 2 in 10 holds.",
+   "round": 2
+  },
+  {
+   "who": "Buffett",
+   "text": "You're right, Elon. I backed a closer on an assumed 2 in 10. That's my mistake.",
+   "round": 2
+  },
+  {
+   "who": "Buffett",
+   "text": "Log the pushed calls and delete reports first. $70k stays in the bank, about 6 weeks of costs.",
+   "round": 2
+  },
+  {
+   "who": "Buffett",
+   "text": "Hire only if 2 in 10 holds. Don't pay $5k/mo for 3 months on a guess.",
+   "round": 2
+  },
+  {
+   "who": "Chair",
+   "text": "Three seats moved to \"free test first, spend later\". Open: is that real C or a delayed B, and does cutting reports hurt retention?",
+   "round": 2
+  },
+  {
+   "who": "Hormozi",
+   "text": "Buffett, a no-spend month is fine. But it's B with a gate, not C. If nobody follows up the pushed calls, you're just leaking $3,000/mo per missed close.",
+   "round": 3
+  },
+  {
+   "who": "Hormozi",
+   "text": "Call it C only if the leak stops. Founder logs 5 to 6 calls, we hire Dec 23 if 2 in 10 holds.",
+   "round": 3
+  },
+  {
+   "who": "Musk",
+   "text": "Nobody gets cut. The AMs keep the calls and the calming, and that's the 40% that stays. Reports are the 60% that goes.",
+   "round": 3
+  },
+  {
+   "who": "Musk",
+   "text": "My kill number is 2 exits in 30 days against today's 1 a month. At 2, I put the reports back.",
+   "round": 3
+  },
+  {
+   "who": "Buffett",
+   "text": "Waiting isn't free, Mark. Margin at 16% bleeds slowly. But a 30-day free log costs $0, and a bad hire costs $15k.",
+   "round": 3
+  },
+  {
+   "who": "Buffett",
+   "text": "A week-6 read on a closer costs about $7k first, and I'd rather have the number before the check. Cash is 6 weeks deep, so I'm buying the number first.",
+   "round": 3
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "Fair, the 2 in 10 is a guess. The log is free, so I'd run it before paying anyone.",
+   "round": 3
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "But 5 to 6 calls is a small sample. One close is a signal, not proof. Read it at day 15.",
+   "round": 3
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "The log won't show what a closer does with all 20 to 25 calls, so treat it as a floor.",
+   "round": 3
+  },
+  {
+   "who": "MrBeast",
+   "text": "Give the 60% back as calls. Every client gets a face-to-face check-in in 2 weeks. A report is a boring first minute, and a call isn't.",
+   "round": 3
+  },
+  {
+   "who": "MrBeast",
+   "text": "2 of 5 leavers said \"communication\". So the metric is how many of the 18 clients heard from a human this month, and I want that at 18.",
+   "round": 3
+  },
+  {
+   "who": "Chair",
+   "text": "Still open: is a free 30-day test C or a gated B, and does the AI build survive at all? Vote on the options as framed.",
+   "round": 3
+  },
+  {
+   "who": "Chair",
+   "text": "Vote on the options as framed: A Replace AMs with AI, B Hire a closer, C Neither, keep the cash.",
+   "round": 4
+  },
+  {
+   "who": "Hormozi",
+   "text": "I vote B, hire the closer. 5 to 6 pushed calls a month is the leak, and a closer plugs it.",
+   "round": 4
+  },
+  {
+   "who": "Hormozi",
+   "text": "The room moved me on the free log, not on the vote. I run the log this month anyway. A is the worst of the three: it risks $54K of revenue to save $8.4K.",
+   "round": 4
+  },
+  {
+   "who": "Musk",
+   "text": "C. Deleting reports costs $0 and takes a week. I'm not paying $14K to automate a step that shouldn't exist.",
+   "round": 4
+  },
+  {
+   "who": "Musk",
+   "text": "Closer waits for the logged close rate. Two exits in 30 days and I put the reports back.",
+   "round": 4
+  },
+  {
+   "who": "Buffett",
+   "text": "C. Keep the cash. The log, the deleted reports and the check-ins cost $0, and I'd have the real close rate before I spend $5k a month on a guess.",
+   "round": 4
+  },
+  {
+   "who": "Buffett",
+   "text": "Hormozi's right that this is a gated B. I'd still hold the $70k until the number shows up.",
+   "round": 4
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "B. The log is free and I'd run it, but it can't test a closer on all 20 to 25 calls.",
+   "round": 4
+  },
+  {
+   "who": "Zuckerberg",
+   "text": "Nobody's moved me off B. I'd keep the $5K base capped at 90 days and read it at week 6.",
+   "round": 4
+  },
+  {
+   "who": "MrBeast",
+   "text": "C. Keep the cash. Nobody has measured the 2 in 10 close rate yet, so I'm not spending $5K/mo on a guess.",
+   "round": 4
+  },
+  {
+   "who": "MrBeast",
+   "text": "A is the worst of the three. The AMs are the only humans your clients hear from, and churn is already 1 a month.",
+   "round": 4
+  },
+  {
+   "who": "Chair",
+   "text": "Two for B (Hormozi, Zuckerberg), three for C (Musk, Buffett, MrBeast), nobody for A.",
+   "round": 4
+  },
+  {
+   "who": "Chair",
+   "text": "WAIT, until the founder's own pushed-call log shows 1 close or more by day 15 (Dec 8) and 2 in 10 or better by Dec 23, which turns it into GO on B. Option C: keep the $70,000 and fire nobody. Stop the weekly written reports and take every pushed call yourself, then let the logged close rate decide on the closer. Next step: By Wednesday Nov 25, stop sending the weekly reports to all 18 clients, book the 5 to 6 pushed calls within 24 hours, and log each one with its outcome.",
+   "round": null
+  }
+ ],
+ "chair": [
+  {
+   "round": 0,
+   "text": "Decision: A replace AMs with AI, B hire a closer, C neither and keep the cash. The seats are AI personas, not the real people.",
+   "at": null
+  },
+  {
+   "round": 1,
+   "text": "Cruxes: can the report work be deleted cheaply, is the pushed half of calls real pipeline, and does a closer really hit 2 in 10.",
+   "at": null
+  },
+  {
+   "round": 1,
+   "text": "Four seats back B. Musk backs a cheap A. Buffett and Musk, say what a no-spend quarter beats.",
+   "at": null
+  },
+  {
+   "round": 2,
+   "text": "Only three seats are in, so one thread. Musk takes on Hormozi: delete the reports first, or fix the closing leak first?",
+   "at": 0
+  },
+  {
+   "round": 2,
+   "text": "Three seats moved to \"free test first, spend later\". Open: is that real C or a delayed B, and does cutting reports hurt retention?",
+   "at": null
+  },
+  {
+   "round": 3,
+   "text": "Still open: is a free 30-day test C or a gated B, and does the AI build survive at all? Vote on the options as framed.",
+   "at": null
+  },
+  {
+   "round": 4,
+   "text": "Vote on the options as framed: A Replace AMs with AI, B Hire a closer, C Neither, keep the cash.",
+   "at": 0
+  },
+  {
+   "round": 4,
+   "text": "Two for B (Hormozi, Zuckerberg), three for C (Musk, Buffett, MrBeast), nobody for A.",
+   "at": null
+  },
+  {
+   "round": null,
+   "text": "WAIT, until the founder's own pushed-call log shows 1 close or more by day 15 (Dec 8) and 2 in 10 or better by Dec 23, which turns it into GO on B. Option C: keep the $70,000 and fire nobody. Stop the weekly written reports and take every pushed call yourself, then let the logged close rate decide on the closer. Next step: By Wednesday Nov 25, stop sending the weekly reports to all 18 clients, book the 5 to 6 pushed calls within 24 hours, and log each one with its outcome.",
+   "at": null
+  }
+ ]
+}

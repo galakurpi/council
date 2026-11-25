@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Council · Yekar</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="lab.css">
+<link rel="stylesheet" href="council.css?v=409c1279">
+</head>
+<body>
+<div class="room">
+  <header class="bar">
+    <span class="logo"><i></i><i></i><i></i><i></i><i></i></span><b>Council</b><span class="muted">/council in Claude Code</span>
+    <span class="round" id="round"></span>
+  </header>
+  <section class="cast" id="cast"><div class="table"></div></section>
+  <section class="chat" id="chat"></section>
+  <div class="foot">
+    <div class="typing" id="typing"></div>
+    <form class="composer" id="composer" autocomplete="off">
+      <textarea id="box" rows="1" spellcheck="false" placeholder="Ask the council a business decision…"></textarea>
+      <button id="run" type="submit" aria-label="Send">↑</button>
+    </form>
+    <div class="disclaim">AI personas built from each person's public principles, in our words. Not the real people; none of them took part or endorses this. <a href="assets/CREDITS.md" target="_blank">Credits</a></div>
+  </div>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="sheet seat-sheet">
+    <button class="x" id="close">✕</button>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
+<script src="data.js?v=cd6d4504"></script>
+<script src="app.js?v=7f119213"></script>
+</body>
+</html>

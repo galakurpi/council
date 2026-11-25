@@ -1,0 +1,35 @@
+{
+ "round": 4,
+ "options": {
+  "A": 2.0,
+  "B": 5.9,
+  "C": 6.4
+ },
+ "math": {
+  "A": "(3x2 + 2x2 + 3x2 + 2x2 + 1x2) / 11 = 2.0",
+  "B": "(3x7 + 2x5 + 3x5 + 2x7 + 1x5) / 11 = 5.9",
+  "C": "(3x4 + 2x8 + 3x8 + 2x5 + 1x8) / 11 = 6.4"
+ },
+ "top": "C",
+ "label": "DON'T DO IT",
+ "overrides": [
+  "C is the hold option (Neither, keep the cash), so the council says don't spend."
+ ],
+ "spread": 4.0,
+ "confidence": 7,
+ "votes": {
+  "hormozi": "B",
+  "musk": "C",
+  "buffett": "C",
+  "zuckerberg": "B",
+  "mrbeast": "C"
+ },
+ "picks": {
+  "hormozi": "B",
+  "musk": "C",
+  "buffett": "C",
+  "zuckerberg": "B",
+  "mrbeast": "C"
+ },
+ "support": null
+}
