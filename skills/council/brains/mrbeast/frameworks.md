@@ -20,6 +20,10 @@ The business translations are ours; the models are his.
   "First off, come up with ideas you think would do well, and then ask yourself later if they're doable." (S04 64:39)
 - **Use:** before spending on a launch, hire, rebrand or campaign. Can you write the one-line headline and the picture
   now, and would a stranger stop for it?
+- **Never finished:** even at 200 million views a video he says he relearns it every other month and tells himself
+  ten times a day that the title and thumbnail matter more than he thinks.
+  "you never actually get it because it's always more important than you realize." (S15 64:52)
+  He still A/B tests the picture: the calmer, closed-mouth face beat his old open-mouth face in every test (S15 67:50).
 - **Score:** if the founder cannot state the hook in one sentence, cap at 4 until they can.
 
 ## 3. Purple cow and the three questions (S09, S11, S13)
@@ -28,6 +32,7 @@ The business translations are ours; the models are his.
   credits the image to a TED talk he once watched (S09 64:56). Repeating what worked is "the inverse" of how to look at
   it (S13 77:47).
   "But if it's a purple cow, if it's something you've never seen, then you'll think about it again," (S13 77:41)
+  By 2026 he states the rule flat: "the second, uh, something's been done before, it's a lot more less interesting" (S20 01:32)
 - **Score:** 1 point each for original, full effort, a named improvement; scale to 10. Copycat options score low.
 
 ## 4. Retention by stage (T03, S02, S04, S10)
@@ -44,6 +49,11 @@ The business translations are ours; the models are his.
   (S12 09:43). One bad video breaks that trust (S03 43:10). A clickbait promise the content misses makes people leave
   (T03), and fakes hurt: he avoids CGI so viewers keep believing what they see (S10 68:33).
   "You can get views on a video, but people can feel unsatisfied and then not click the next one-" (S06 35:25)
+  In 2025 he spells out the habit loop: after 20 good clicks the viewer clicks the 21st without thinking, and
+  "like all it takes is one bad video to destroy that trust." (S18 26:56) The promise is to
+  "They underpromise, overdeliver. It's always good. It's always high quality." (S18 26:06)
+  He applies it to props too: he wanted the fake-money filler swapped out on the Beast Games set because
+  "I'm worried they're gonna think the money's fake, and we keep saying it's real." (S17 31:24)
 - **Score:** any option that wins now by overpromising scores 2 or less, however good the short-term numbers.
 
 ## 6. Exponential returns: one great beats a hundred mediocre (S04, S07, S11)
@@ -58,6 +68,8 @@ The business translations are ours; the models are his.
   costs low so the risk is survivable (S13 135:41), pay yourself only what you spend (S11 61:58), and he tells others
   not to copy his all-in style without savings (S05 82:55).
   "I don't think that the more I spend, the better it is. But I do think the more you spend in a strategic way, the better it could be" (S01 14:28)
+  The floor is cheap living, not savings: at 18 his costs were about $1,000 a month and everything else went back in.
+  "So if you just live, uh, like below your means, then like it allows you just to go crazy and throw everything back into it." (S16 32:56)
 - **Score:** reinvesting into what customers see and feel: 7-10. Spending on overhead they never see: 3-5. Betting
   the founder's rent: no.
 
@@ -85,6 +97,8 @@ The business translations are ours; the models are his.
 - **What:** someone giving a job all their time beats you giving it a slice, even if they are less skilled (S07 96:43).
   Outsource everything except what only you can do; for him that is being on camera (S07 46:06, S11 55:13).
   "you should look at hiring as a way to free up your time so you can do more important things" (S02 18:40)
+  The 2025 version is arithmetic: a full-time editor gets about seven times his hours on the edit.
+  "Even if we were apples to apples, same skill level, he can still spend, or she, seven times more time than me." (S18 27:46)
 - **Score:** hiring that frees the founder for the highest-leverage work: 8+. Hiring to avoid work that only the
   founder can do: low.
 
@@ -112,4 +126,55 @@ The business translations are ours; the models are his.
   every drop-off, compared with the median of similar videos (S11 78:40). Gains shrink from 10% to 0.1% but stack
   (S09 63:39). Failing because of a wrong call is fine; failing because of laziness is not (S11 82:06).
   "Just remove emotion from the equation and just look at it and figure out how you can improve the next one." (S04 90:19)
+  He rates his own uploads coldly ("Video I think's a 6 out of 10. It's doing fine." (S17 14:40)) and, before Beast
+  Games season two, said "I've read every single review. I'm down to admit when we're wrong." (S21 00:50)
 - **Score:** does the option come with a way to measure it and a date to review it? If not, take 2 points off.
+
+## 16. Concept beats effort: the bathtub and the coffin (S16, S20, S15)
+- **What:** seven days in a bathtub and seven days buried alive cost him the same time, both are him lying still,
+  and one gets maybe 10,000 times the views. So the result tracks the idea, not the hours. Pacing and polish cannot
+  rescue a dull premise (S15 69:31).
+  "views or, or success isn't just, isn't directly correlated with the effort you put in. A lot of it has to do with what is the overarching concept." (S16 57:44)
+- **Use:** before a founder works harder on a weak offer, campaign or service. Same effort, different premise: which
+  one would a stranger stop for?
+- **Score:** two options with the same cost: the one with the stronger, newer premise wins by 3+ points. An option
+  that only adds effort to the same premise gains 1 at most.
+
+## 17. Test small before you bet big (S19, S15, S11)
+- **What:** YouTube is his lab for the streaming show. A game is tried in a video for about $200,000 before a
+  $10 million Beast Games set gets built around it. Where he has no data (streaming release schedules) he says so and
+  waits for it (S15 36:28).
+  "I can do a game for $200,000 in one of my YouTube videos, and if it goes well and people really like it, then now I can feel more confident" (S19 11:16)
+- **Use:** any big spend: a new service line, a full-time hire for an untested role, a rebrand. What is the 2-5%
+  version you can run first in front of real customers?
+- **Score:** a big bet with a cheap test behind it: 7-9. The same bet with no test: cap at 5, unless it is the
+  founder's proven core.
+
+## 18. Prove it first, then get paid (S15)
+- **What:** his deal logic for a first season. Asking for the most money on something unproven buys you less control,
+  because the buyer hedges. Take less on season one, keep creative control and the IP, and price season two on the
+  result. Watch the long tail of a contract: some deals own the IP for ten seasons.
+  "let me prove myself on season one, I'll take a little less money, and then if I crush it, season two just pay me what I'm worth" (S15 27:56)
+  "the more you push the, the less control they're gonna give you." (S15 29:30)
+- **Use:** pricing a first big client, a pilot, a partnership. Trade price for control and a proof point, never for
+  ownership of what you build.
+- **Score:** a deal that keeps control and creates a reference case: 7+. Top price with lost control or IP: 3.
+
+## 19. Don't be the bottleneck: the inverted pyramid (S18, S21, S16)
+- **What:** a normal company is a pyramid with the CEO on top; his is upside down, because he is the product and
+  everyone depends on him filming. If he stops for a month the business is dead (S16 69:20). So the plan is shows and
+  channels that run without him: host the first seasons, then phase out (S18 35:47).
+  "I wanna build one of the largest companies on Earth, and put out a lot of great content where I'm not a bottleneck." (S21 03:41)
+- **Use:** the founder who is the face, the closer or the only one who can deliver. Every option is scored on whether
+  it makes the business less dependent on one person.
+- **Score:** options that move work off the founder's critical path: +2. Options that add more to it: -2.
+
+## 20. The feedback filter (S18, S15)
+- **What:** at scale most criticism is noise. Of 300 negative comments, drop the 250 that are just hate and weigh
+  the 50 that are objective (S18 09:49). Take feedback from both the biggest fans and the harshest critics. Then decide
+  on the merits, not the count.
+  "even if you, you know, 10,000 people left the same exact complaint on a video, I wouldn't change anything unless I wholeheartedly agreed with it." (S18 12:27)
+  "You're never gonna please anyone. You have to, like, at some point, like, decide, like, this is where the line is." (S15 85:43)
+- **Use:** reviews, client complaints, a team that pushes back on a decision.
+- **Score:** an option driven by one loud complaint: no credit. One driven by a pattern that would make the product
+  better: full credit.

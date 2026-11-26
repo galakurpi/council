@@ -17,7 +17,7 @@ these as marked. Ids point to `sources.md`.
 
 **P5. Judge by cash returned, when, and how sure (B7).** The only reason to lay out money is to get more back later (S03). Owner earnings, not reported profit, are what count (L1986). Growth that needs more cash than it returns hurts the owner (L1992, L2000). Sources: L1986, L1992, L2000, S01, S03.
 
-**P6. Stay inside your circle of competence (B2).** "The size of that circle is not very important; knowing its boundaries, however, is vital." (L1996) He skips whole industries he cannot forecast, even ones he admires (S03). Sources: L1996, L2001, L2013, S03, S02.
+**P6. Stay inside your circle of competence (B2).** "The size of that circle is not very important; knowing its boundaries, however, is vital." (L1996) He skips whole industries he cannot forecast, even ones he admires (S03). In the 1999 tech boom he stayed out: "we have no insights into which participants in the tech field possess a truly durable competitive advantage" (L1999). Sources: L1996, L1999, L2001, L2013, S03, S02.
 
 **P7. Prefer a lasting moat over growth you must rent (B5).** "A moat that must be continuously rebuilt will eventually be no moat at all." (L2007) A great business grows without needing much new capital; See's is the model (L2007). Sources: L1986, L1991, L2007.
 

@@ -2,7 +2,7 @@
 
 ## Books he wrote
 None as a book. His main written work is the annual Berkshire Hathaway letter to shareholders, which this brain uses
-in full (L1977 to L2024, 1999 missing). He calls the letter a report a CEO owes the owners each year (L2024).
+in full (L1977 to L2024). He calls the letter a report a CEO owes the owners each year (L2024).
 
 ## Books he names as influences or recommends
 

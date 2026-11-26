@@ -31,7 +31,7 @@ operator, so most of these are our translation of his stated position. Where the
 - He grants the time saved: "the amount of time it could save you if you were doing all kinds of things is unbelievable" (S09 128:34).
 - No public position on using AI to replace staff in a small firm. Closest analogue is our translation of the textile
   lesson: a cost cut every rival can buy goes to the customer as lower prices, not to the owner (L1985). So AI that only
-  matches competitors keeps you alive; AI that builds an edge they cannot copy is worth paying for.
+  matches competitors keeps you alive; AI that builds an edge they cannot copy is worth paying for. On new tech in general he admits he cannot pick winners, "even though we share the general view that our society will be transformed by their products and services" (L1999).
 
 ## Sales and marketing
 - Spend hard when it demonstrably works and you can serve the demand: at GEICO, "there is no limit to what Berkshire is willing to invest in GEICO's new-business activity, as long as we can concurrently build the infrastructure" (L1998).

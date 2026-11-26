@@ -2,10 +2,12 @@
 
 What this brain is built from. Interviews were transcribed through an API speech-to-text model (ElevenLabs Scribe) with
 speaker labels; only his lines were used, so quotes keep spoken quirks ("uh", repeats, cut-off words). The timestamp
-points into the video. Texts are his own written words unless the row says otherwise. Ids never get renumbered; add new
-sources as new rows.
+points into the video (minutes keep counting past 60, so 125:01 is 2:05:01). Texts are his own written words unless the
+row says otherwise. Ids never get renumbered; add new sources as new rows.
 
-## Interviews (S), oldest first
+Totals: 24 interviews, about 249,000 of his words out of about 375,000 transcribed; 12 texts, about 10,900 words.
+
+## Interviews (S), first batch, oldest first
 
 | ID | Title | URL | Date | Type | Words (his / total) |
 |---|---|---|---|---|---|
@@ -20,8 +22,32 @@ sources as new rows.
 | S09 | Dwarkesh Patel: "In 36 months, the cheapest place to put AI will be space" | https://www.youtube.com/watch?v=BYXbuik3dgA | 2026-02-05 | podcast | 22,600 / 31,100 |
 | S10 | The Economist: The full-length interview with Elon Musk | https://www.youtube.com/watch?v=XuoqKYxDHVc | 2026-07-29 | interview | 9,400 / 15,600 |
 
-Speaker labels used: S1 is Musk in S01 to S05, S07, S08 and S10; S0 is Musk in S06 and S09. In S01 and S09 the diarisation
-sometimes merges a host's short line into his label; no quote here relies on such a line.
+## Interviews (S), second batch, oldest first
+
+Added in the deepening pass. Ids continue from S10, so S11 to S24 are oldest first within this batch, not across the
+whole table.
+
+| ID | Title | URL | Date | Type | Words (his / total) |
+|---|---|---|---|---|---|
+| S11 | Foundation with Kevin Rose | https://www.youtube.com/watch?v=L-s_3b5fRd8 | 2012-09-08 | interview | 4,200 / 5,300 |
+| S12 | TED 2013: The mind behind Tesla, SpaceX, SolarCity | https://www.youtube.com/watch?v=IgKWPdJWuBQ | 2013-03-19 | talk interview | 3,200 / 4,100 |
+| S13 | TED 2017: The future we're building, and boring | https://www.youtube.com/watch?v=zIwLWfaAg-8 | 2017-05-03 | talk interview | 4,800 / 7,400 |
+| S14 | Lex Fridman Podcast #18: Tesla Autopilot | https://www.youtube.com/watch?v=dEv99vxKjVI | 2019-04-12 | podcast | 3,000 / 5,400 |
+| S15 | Lex Fridman Podcast #49: Neuralink, AI, Autopilot, and the Pale Blue Dot | https://www.youtube.com/watch?v=smK9dgdTl40 | 2019-11-12 | podcast | 4,200 / 6,000 |
+| S16 | Munro Live: 1-on-1 with Sandy Munro | https://www.youtube.com/watch?v=YAtLTLiqNwg | 2021-02-02 | interview | 5,500 / 10,300 |
+| S17 | Ron Baron interviews Elon Musk at the 29th Annual Baron Investment Conference | https://www.youtube.com/watch?v=E-squeb0YJA | 2023-01-04 | conference interview | 6,700 / 9,800 |
+| S18 | First Look Inside SpaceX's Starfactory (Everyday Astronaut) | https://www.youtube.com/watch?v=aFqjoCbZ4ik | 2024-06-22 | factory tour | 7,400 / 12,100 |
+| S19 | Tour of Starship before launch, with post-launch interview (Everyday Astronaut) | https://www.youtube.com/watch?v=InJOlT6WdHc | 2024-06-25 | factory tour | 3,700 / 6,500 |
+| S20 | Joe Rogan Experience #2281 | https://www.youtube.com/watch?v=sSOxPJD-VNo | 2025-02-28 | podcast | 20,900 / 34,900 |
+| S21 | Joe Rogan Experience #2404 | https://www.youtube.com/watch?v=O4wBUysNe2k | 2025-10-31 | podcast | 26,000 / 36,700 |
+| S22 | Katie Miller Pod Ep. 18: DOGE, AI, and simulation | https://www.youtube.com/watch?v=bz5Hjk40FD4 | 2025-12-09 | podcast | 6,600 / 8,000 |
+| S23 | Baron Investment Conference 2026 with Ron Baron: Terafab, Starship and data centers in space | https://www.youtube.com/watch?v=ir-DFO_5yPw | 2026-11-13 | conference interview | 7,000 / 10,200 |
+| S24 | The New York Times DealBook interview ("Not MAGA") | https://www.youtube.com/watch?v=zWeT91uH7LI | 2026-11-18 | interview | 6,400 / 8,800 |
+
+Speaker labels used: S1 is Musk in S01 to S05, S07, S08, S10 to S16, S18, S19 and S22 to S24; S0 is Musk in S06 and S09;
+S2 is Musk in S17, S20 and S21. In S15 the host is split across S0 and S2. In S01, S09, S12 and S21 the diarisation
+sometimes merges a host's line into his label (S12 near 13:00 to 18:30, S21 near 12:09 to 19:11); no quote here relies
+on such a passage. Dates are upload dates; S17 was recorded at the late-2022 conference.
 
 ## Texts (T), oldest first
 
@@ -41,8 +67,11 @@ sometimes merges a host's short line into his label; no quote here relies on suc
 | T12 | Tesla headcount reduction memo (more than 10% globally) | https://www.cnbc.com/2024/04/15/tesla-shares-dip-in-premarket-trade-on-global-layoff-reports.html | 2024-04-15 | memo | 220 |
 
 Notes on use:
-- T07 is a condensed second-hand rendering, not his words. The algorithm is quoted only from S01, where he says it himself.
+- T07 is a condensed second-hand rendering, not his words. The algorithm is quoted only from S01 and S17, where he says it himself.
 - T11 is a Tesla whitepaper, not signed by him. It is listed for completeness; this brain does not quote it.
-- S05 is mostly politics and is not cited. T03 (a product-safety defense) is read but not cited. The seat never talks politics.
-- Not in this corpus: Walter Isaacson's *Elon Musk* (2023), which the seat file cites for M2; his X posts; earnings calls.
-  Add them as new rows and new ids.
+- S05 is mostly politics and is not cited. S20, S21, S22 and S24 are also mostly politics; only their management, cost,
+  AI-jobs and engineering passages are cited (DOGE is used only for what it shows about cutting waste in any
+  organization). T03 (a product-safety defense) is read but not cited. The seat never talks politics.
+- S14 and S15 are mostly Autopilot and AI-safety detail; they are cited for the human-in-the-loop rule and a few habits.
+- Not in this corpus: Walter Isaacson's *Elon Musk* (2023), which the seat file once cited for M2; his X posts; earnings
+  calls. Add them as new rows and new ids.

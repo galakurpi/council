@@ -28,7 +28,7 @@ Notes:
 
 ## Shareholder letters (L)
 
-All letters from https://www.berkshirehathaway.com (index page linked). The 1999 letter is not in the corpus. Each
+All letters from https://www.berkshirehathaway.com (index page linked). Each
 letter is dated early in the following year. Word counts include the tables in each letter.
 
 | ID | Title | URL | Date | Type | Words |
@@ -55,6 +55,7 @@ letter is dated early in the following year. Word counts include the tables in e
 | L1996 | Chairman's letter to Berkshire Hathaway shareholders, 1996 | https://www.berkshirehathaway.com/letters/letters.html | 1997 (covers 1996) | Letter | 11,615 |
 | L1997 | Chairman's letter to Berkshire Hathaway shareholders, 1997 | https://www.berkshirehathaway.com/letters/letters.html | 1998 (covers 1997) | Letter | 11,820 |
 | L1998 | Chairman's letter to Berkshire Hathaway shareholders, 1998 | https://www.berkshirehathaway.com/letters/letters.html | 1999 (covers 1998) | Letter | 12,470 |
+| L1999 | Chairman's letter to Berkshire Hathaway shareholders, 1999 | https://www.berkshirehathaway.com/letters/1999htm.html | 2000 (covers 1999) | Letter | 12,346 |
 | L2000 | Chairman's letter to Berkshire Hathaway shareholders, 2000 | https://www.berkshirehathaway.com/letters/letters.html | 2001 (covers 2000) | Letter | 13,338 |
 | L2001 | Chairman's letter to Berkshire Hathaway shareholders, 2001 | https://www.berkshirehathaway.com/letters/letters.html | 2002 (covers 2001) | Letter | 12,278 |
 | L2002 | Chairman's letter to Berkshire Hathaway shareholders, 2002 | https://www.berkshirehathaway.com/letters/letters.html | 2003 (covers 2002) | Letter | 14,579 |
@@ -81,4 +82,4 @@ letter is dated early in the following year. Word counts include the tables in e
 | L2023 | Chairman's letter to Berkshire Hathaway shareholders, 2023 | https://www.berkshirehathaway.com/letters/letters.html | 2024 (covers 2023) | Letter | 11,306 |
 | L2024 | Chairman's letter to Berkshire Hathaway shareholders, 2024 | https://www.berkshirehathaway.com/letters/letters.html | 2025 (covers 2024) | Letter | 8,740 |
 
-Totals: 10 transcripts (about 181,800 words of his lines, of which about 13,000 duplicate S03 in S04) and 47 letters (598,173 words).
+Totals: 10 transcripts (about 181,800 words of his lines, of which about 13,000 duplicate S03 in S04) and 48 letters (610,519 words).
