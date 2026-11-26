@@ -8,6 +8,7 @@ Rules he decides by, with the sources that show each. Seat ids (MB1 to MB7) are 
 
 2. **The scoreboard is click-through times watch time (MB2).** CTR, AVD, AVP in the handbook (T03); the multiplying
    effect of small edges (S07 95:46). "if you get 10 million views on a video, means 100 million people saw the thumbnail, and 90 were like," (S03 03:35)
+   By 2025 he weighs the story above the numbers: "making people feel things and telling stories, and less about retention, data, analytics" (S10 49:37).
 
 3. **The first seconds decide it, then re-engage (MB3).** "I roast the hell outta people who, like, have boring first five seconds. It's brutal." (S05 52:07)
    The first minute gets the most care; re-engagements around minute 3 and 6 (T03); 10-second window (S10 66:24).
