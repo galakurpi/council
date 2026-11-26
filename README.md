@@ -8,7 +8,7 @@ Hormozi (offer and money), Musk (first principles), Buffett (cash and risk), Zuc
 (attention) sit in one group chat. Each reads your numbers and gives an opening take. Then they argue back and forth,
 change their minds when someone lands a point, and vote. You get:
 
-- **Brains**: each seat can have a folder of notes it reads first (`skills/council/brains/<seat>/`: hot sheet, frameworks, principles, positions, stories, voice, books, sources). Every seat has one; Hormozi's is built from his books and 22 transcribed long-form videos, the others are starters to fill.
+- **Brains**: every seat reads its own folder of notes first (`skills/council/brains/<seat>/`: hot sheet, frameworks, principles, positions, stories, voice, books, sources), built from that person's own words: about 70 long interviews transcribed, Buffett's 47 shareholder letters, Hormozi's books, Musk's master plans and company emails, Zuckerberg's letters and earnings remarks, MrBeast's production handbook. Every quote is checked against its source.
 - **A verdict**: GO, WAIT or DON'T, the one thing to do this week, the conditions, and when to kill it.
 - **Weighted scores**: every seat scores every option from 1 to 10, weighted by how much its area matters to this decision.
 - **A page that replays the whole table**: talking faces, the chat, the vote board and the ruling.
