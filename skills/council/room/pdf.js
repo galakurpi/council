@@ -9,11 +9,16 @@ const C = {
 const LABEL = { go: [72, 170, 110], wait: [214, 150, 52], no: [196, 84, 68] };
 const labelColor = l => /DON'T|NO\b|KILL/i.test(l) ? LABEL.no : /WAIT|RESHAPE/i.test(l) ? LABEL.wait : LABEL.go;
 
+// loaded on the first click, not with the page: the PDF library, and faces.js (the shipped faces as ready-made JPEGs)
 let lib = null;
-const loadLib = () => window.jspdf ? Promise.resolve() : lib ??= new Promise((res, rej) => {
-  const s = document.createElement('script'); s.src = 'vendor/jspdf.umd.min.js'; s.onload = res;
-  s.onerror = () => rej(new Error('could not load the PDF library')); document.head.append(s);
+const script = src => new Promise((res, rej) => {
+  const s = document.createElement('script'); s.src = src; s.onload = res;
+  s.onerror = () => rej(new Error('could not load ' + src)); document.head.append(s);
 });
+const loadLib = () => lib ??= Promise.all([
+  window.jspdf || script('vendor/jspdf.umd.min.js').catch(() => { throw new Error('could not load the PDF library'); }),
+  window.FACES || script('faces.js').catch(() => {}),
+]);
 
 // the PDF's built-in Times speaks WinAnsi only: map what it lacks, drop the principle ids (H5) the cards cite
 const MAP = { '→': '->', '←': '<-', '≥': '>=', '≤': '<=', '≈': '~', '−': '-', '‑': '-', ' ': ' ', ' ': ' ' };
@@ -21,8 +26,11 @@ const KEEP = new Set('‘’“”–—•…€™');
 const clean = t => String(t ?? '').replace(/\s*\((?:[A-Z]{1,2}\d+[a-z]?(?:,\s*)?)+\)/g, '').replace(/\*\*/g, '')
   .replace(/[^\x00-\xff]/g, c => MAP[c] ?? (KEEP.has(c) ? c : '')).replace(/[ \t]+/g, ' ').trim();
 
-// a face as a round JPEG on the page's white; null when the browser will not read the image back (a room opened from disk)
+// a face as a round JPEG on the page's white. The shipped ones come ready-made in faces.js, because a room opened from
+// disk may not read an image back from the page; renders you add yourself are drawn here, and are null from disk.
 async function face(k) {
+  if (window.DATA.seats[k].face === false) return null;  // a seat added with /newcouncil has no render
+  if (window.FACES?.[k]) return window.FACES[k];
   try {
     const im = new Image(); im.src = `assets/faces/${k}-base.webp`; await im.decode();
     const cv = document.createElement('canvas'); cv.width = cv.height = 160; const g = cv.getContext('2d');

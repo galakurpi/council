@@ -1,7 +1,7 @@
-// Council: five seats debating one decision in a group chat. It replays one real /council run (data.js, written by
-// tools/build.py from the run's stream log and session folder): every bubble is a seat's own SAYS line or a Chair line
-// from chat.md, turn by turn in the order they really came back. Waits are cut short; each message keeps time to read.
-// ?speed=5 replay speed · ?play=1 type the question and send at once · ?t=95 | ?t=end freeze at that second of the run
+// Council: the seats debating one decision in a group chat. It replays one real /council run (data.js, written by
+// `council.py page` from the session folder): every bubble is a seat's own SAYS line or a Chair line from chat.md, turn
+// by turn in the order they came. The run plays as the page opens; each message keeps time to read.
+// ?speed=5 replay speed · ?t=95 | ?t=end freeze at that second of the run
 const D = window.DATA, $ = s => document.querySelector(s), P = new URLSearchParams(location.search);
 const KEYS = Object.keys(D.seats), SPEED = +P.get('speed') || 5, K = 5 / SPEED, CAP = 1.6;
 const Q = D.question, RN = Object.keys(D.rounds).map(Number).sort(), LAST = RN[RN.length - 1], OPTS = Object.keys(D.options).sort();
@@ -10,9 +10,12 @@ const seatName = k => D.seats[k]?.short || '';
 const BY_NAME = Object.fromEntries(KEYS.map(k => [seatName(k).toLowerCase(), k]));
 const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
   .replace(/@([A-Za-z]+)/g, (m, n) => BY_NAME[n.toLowerCase()] ? `<span class="at" style="--c:${D.seats[BY_NAME[n.toLowerCase()]].color}">${m}</span>` : m)
-  .replace(/\s*\(((?:MB|[HMBZ])\d+(?:,\s*(?:MB|[HMBZ])\d+)*)\)/g, '');  // principle ids stay in the card, not the chat
+  .replace(/\s*\(([A-Z]{1,2}\d+(?:,\s*[A-Z]{1,2}\d+)*)\)/g, '');  // principle ids stay in the card, not the chat
 const img = (k, s = 'base') => `assets/faces/${k}-${s}.webp`;
-const av = k => `<span class="av"><img src="${img(k)}" alt=""></span>`;
+// a seat added with /newcouncil has no renders (data.js says face: false): its initials on its colour stand in
+const ini = k => esc(D.seats[k].name.split(/\s+/).map(w => w[0]).slice(0, 2).join('').toUpperCase());
+const noFace = k => D.seats[k].face === false;
+const av = k => noFace(k) ? `<span class="av ini" style="--c:${D.seats[k].color}">${ini(k)}</span>` : `<span class="av"><img src="${img(k)}" alt=""></span>`;
 const optName = o => D.options[o].replace(/\s*\(.*$/, '');
 const words = s => s.split(/\s+/).length;
 const hold = s => Math.min(2.8, Math.max(1.1, words(s) * .1)) * K;  // how long a message stays the newest one
@@ -20,7 +23,7 @@ const turnsOf = n => D.rounds[n].turns || Object.entries(D.rounds[n].cards).map(
 const lines = c => (c.SAYS || c['THE CALL'] || c['ONE LINE FOR THE FOUNDER'] || c.VOTE || '').split('\n').map(s => s.trim()).filter(Boolean);
 const pick = c => c.pick || (c.scores && Object.keys(c.scores).sort((a, b) => c.scores[b] - c.scores[a])[0]);
 
-// the run's timeline, or an even one when the page opens a run with no stream log (the skill's own room/)
+// the run's timeline when data.js carries one, else an even one built from the rounds
 function synthetic() {
   const tl = [{ t: 1, kind: 'file', name: 'brief.md' }]; let t = 3;
   for (const n of RN) {
@@ -75,7 +78,7 @@ const X = [];
 const cast = Object.fromEntries(KEYS.map((k, i) => {
   const el = document.createElement('div'), s = D.seats[k], x = (i + .5) / KEYS.length, u = (x - .5) / .55, d = 1 - Math.sqrt(1 - u * u);
   el.className = 'm'; el.style.cssText = `--c:${s.color};--x:${x};--d:${d.toFixed(3)};--s:${(1 + .35 * d).toFixed(3)};--z:${1 + Math.round(Math.abs(u) * 4)}`;
-  el.innerHTML = `<span class="bub"><i></i><i></i><i></i></span><div class="face"><div class="bust" data-shape="base">${['base', 'mid', 'open', 'blink'].map(f => `<img class="${f}" src="${img(k, f)}" alt="${f == 'base' ? esc(s.name) : ''}">`).join('')}</div></div><div class="plate"><b>${esc(seatName(k))}</b><span>${esc(s.lens)}</span></div>`;
+  el.innerHTML = `<span class="bub"><i></i><i></i><i></i></span><div class="face"><div class="bust" data-shape="base">${noFace(k) ? `<span class="ini">${ini(k)}</span>` : ['base', 'mid', 'open', 'blink'].map(f => `<img class="${f}" src="${img(k, f)}" alt="${f == 'base' ? esc(s.name) : ''}">`).join('')}</div></div><div class="plate"><b>${esc(seatName(k))}</b><span>${esc(s.lens)}</span></div>`;
   el.onclick = () => S.last[k] && openCard(...S.last[k], k);
   $('#cast').append(el);
   return [k, el];
@@ -99,21 +102,16 @@ setInterval(() => {
 }, 110);
 const talk = (k, s) => { for (const o of KEYS) if (o != k) talkUntil[o] = 0; talkUntil[k] = performance.now() + s * 1000; };
 
-// state
-let S, raf = 0, auto = 0, typed = 0;
-const box = $('#box'), run = $('#run'), chat = $('#chat');
+// state. `hooks` hear every change of it ('reset', 'play', 'done'): the two links under the chat, and a page's own controls
+let S, raf = 0;
+const chat = $('#chat'), hooks = [], changed = what => hooks.forEach(f => f(what));
 function reset() {
-  cancelAnimationFrame(raf); clearTimeout(auto); talkUntil = {};
+  cancelAnimationFrame(raf); talkUntil = {};
   S = { round: 0, typing: [], last: {}, said: {}, busy: false, done: false, verdict: false };
   KEYS.forEach(k => cast[k].className = 'm');
-  chat.innerHTML = '<div class="hint">Five AI seats argue your decision in one group chat,<br>then the Chair gives you a verdict.</div>';
+  chat.innerHTML = `<div class="hint">${['Two', 'Three', 'Four', 'Five', 'Six', 'Seven'][KEYS.length - 2] || KEYS.length} AI seats argue your decision in one group chat,<br>then the Chair gives you a verdict.</div>`;
   $('#round').textContent = ''; $('#round').className = 'round'; $('#typing').innerHTML = '';
-  setBox(typed);
-}
-function setBox(n) {
-  typed = Math.max(0, Math.min(Q.length, n)); box.value = Q.slice(0, typed);
-  box.style.height = 'auto'; box.style.height = box.scrollHeight + 'px';
-  run.className = S?.busy ? 'busy' : S?.done ? 'done' : typed ? 'ready' : '';
+  changed('reset');
 }
 
 function post(html, cls) {
@@ -201,7 +199,7 @@ function apply(e, anim) {
   else if (e.kind == 'chair') chair(e.text);
   else if (e.kind == 'board') board();
   else if (e.kind == 'verdict') verdict();
-  else if (e.kind == 'done') { S.done = true; S.busy = false; setBox(typed); }
+  else if (e.kind == 'done') { S.done = true; S.busy = false; changed('done'); }
 }
 
 // the verdict PDF (pdf.js, loaded on the first click): opens in a new tab, or downloads when the tab is blocked
@@ -227,19 +225,8 @@ $('#close').onclick = () => $('#modal').hidden = true;
 $('#modal').onclick = e => e.target.id == 'modal' && ($('#modal').hidden = true);
 addEventListener('keydown', e => e.key == 'Escape' && ($('#modal').hidden = true));
 
-// the composer: whatever you type, the box writes the real run's question, one character per key
-box.addEventListener('input', () => { if (S.busy) return setBox(typed); const n = box.value.length; if (S.done) { typed = 0; reset(); } setBox(n); });
-box.addEventListener('keydown', e => { if (e.key == 'Enter' && !e.shiftKey) { e.preventDefault(); send(); } });
-$('#composer').addEventListener('submit', e => { e.preventDefault(); send(); });
-function send(ms = 14) {  // finish typing the question, then post it
-  if (S.busy) return;
-  if (S.done) { typed = 0; reset(); }
-  S.busy = true; setBox(typed);
-  const step = () => { if (typed < Q.length) { setBox(typed + 1); run.className = 'busy'; auto = setTimeout(step, ms); } else play(); };
-  step();
-}
 function play() {
-  reset(); S.busy = true; setBox(0); you();
+  reset(); S.busy = true; changed('play'); you();
   const t0 = performance.now(); let i = 0;
   const tick = () => {
     const r = (performance.now() - t0) / 1000;
@@ -248,10 +235,19 @@ function play() {
   };
   raf = requestAnimationFrame(tick);
 }
-function seek(t) { reset(); setBox(0); you(); for (const e of X) if (e.t <= t) apply(e, false); }
-window.council = { play: () => send(), seek, events: X, end: T_END, length: X[X.length - 1].rt };
+function seek(t) { reset(); changed('play'); you(); for (const e of X) if (e.t <= t) apply(e, false); }
+window.council = { play, seek, reset, question: Q, on: f => hooks.push(f), busy: () => S.busy, done: () => S.done, events: X, end: T_END, length: X[X.length - 1].rt };
+
+// under the chat: skip to the verdict while the run replays, play it again once it is over, and the PDF at any time
+const skip = $('#skip'), again = $('#again');
+if (skip) {
+  skip.onclick = e => { e.preventDefault(); seek(Infinity); };
+  again.onclick = e => { e.preventDefault(); play(); };
+  $('#pdf').onclick = e => { e.preventDefault(); verdictPdf(e.currentTarget); };
+  hooks.push(() => { skip.hidden = S.done; again.hidden = !S.done; });
+}
 
 const at = P.get('t');
 reset();
 if (at) seek(at == 'end' ? Infinity : +at);
-else { box.focus(); if (P.get('play')) send(40); }
+else if (skip) play();

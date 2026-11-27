@@ -23,10 +23,12 @@ Needs Claude Code and Python 3 (standard library only). No API keys, no MCP serv
 
 ```bash
 git clone https://github.com/galakurpi/council.git
-cp -r council/skills/council ~/.claude/skills/council
+mkdir -p ~/.claude/skills && cp -r council/skills/council council/skills/newcouncil ~/.claude/skills/
 ```
 
-Then, in Claude Code, from your project:
+The two folders go side by side: `council` is the table, `newcouncil` adds people to it. On Windows (PowerShell):
+`New-Item -ItemType Directory -Force $HOME\.claude\skills; Copy-Item council\skills\council, council\skills\newcouncil $HOME\.claude\skills -Recurse -Force`.
+Close Claude Code and open it again, then, from your project:
 
 ```
 /council "Should I spend $20k on ads or hire a closer?"
@@ -38,6 +40,18 @@ to three questions. See [example/business.md](example/business.md).
 
 Each council is saved in `council/<date>-<slug>/` in your project: the brief, every round's cards, the chat,
 `score.json`, `verdict.md`, and `room/index.html` (open it in a browser to replay the table and get the PDF).
+
+## Add anyone to the council
+
+```
+/newcouncil Naval Ravikant
+```
+
+Claude researches the person, reads their books, letters and long interviews, writes their brain
+(`council/brains/<key>/`) and their seat (`council/seats/<key>.md`), and they sit at the table from the next `/council`.
+It uses web search, so it takes a few minutes. Add a folder path after the name to build the brain from your own material
+instead. `python3 ~/.claude/skills/council/scripts/council.py seats` lists everyone at the table. An added seat shows as
+initials on the replay page and in the PDF.
 
 ## The example
 

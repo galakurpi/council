@@ -3,14 +3,20 @@
 
   python3 council.py score <session>   weighted option scores, verdict band, spread, confidence -> <session>/score.json
   python3 council.py check <session>   every principle id a seat cites exists in its seat file; no long quotes
-  python3 council.py page  <session>   session.json + a replay page in <session>/room/ (open room/index.html)
+  python3 council.py page  <session>   session.json + a replay page in <session>/room/, opened in the browser
+  python3 council.py seats             who is on the council, and whether every seat is complete
+  python3 council.py add   <folder>    seat the person /newcouncil staged in <folder> (checked first, then copied in)
 
 A session folder holds council.json (written by the Chair), round-1.md .. round-4.md (the seats' cards, one `## <Seat>`
 heading per card; the debate has one per turn, in turn order), chat.md (the group chat, a `## Round <n>` section per round)
 and verdict.md. The Chair computes nothing by hand: it runs `score` and copies the numbers. A seat whose round 1
 STAKE is `out` has no scores and casts no vote, so it counts nowhere.
+
+The five seats below ship with the skill. /newcouncil adds a person: it stages <key>/seat.md, <key>/seat.json
+({name, short, lens, question, color}) and <key>/brain/ in the project, and `add` copies them to seats/<key>.md,
+brains/<key>/ and seats/roster.json, which is read on top of the five.
 """
-import json, re, shutil, sys
+import json, os, re, shutil, sys, webbrowser
 from pathlib import Path
 
 SKILL = Path(__file__).resolve().parent.parent
@@ -21,6 +27,11 @@ ROSTER = {  # key: (name, short heading, lens, the question the seat owns, colou
     "zuckerberg": ("Mark Zuckerberg", "Zuckerberg", "Distribution", "What will Meta's feed and ads actually reward here?", "#93aaea"),
     "mrbeast": ("MrBeast", "MrBeast", "Attention", "Will people click, and will they keep watching?", "#e4c25e"),
 }
+EXTRA = SKILL / "seats" / "roster.json"   # seats added with /newcouncil
+if EXTRA.exists():
+    ROSTER |= {k: tuple(v.get(f, "") for f in ("name", "short", "lens", "question", "color")) for k, v in json.loads(EXTRA.read_text()).items()}
+BRAIN = ("_hot.md", "frameworks.md", "principles.md", "positions.md", "stories.md", "voice.md", "books.md", "sources.md")
+PID = r"^\*\*([A-Z]{1,2})(\d+)\b"   # a principle line in a seat file: **H4** ...
 ROUNDS = {1: "Opening", 2: "The debate", 3: "Crossfire", 4: "The vote"}
 FIELDS = ["SEAT", "STAKE", "STANCE", "OPTION SCORES", "CONFIDENCE", "RUIN RISK", "DOOR", "THE CALL", "WHY", "THE RISK I SEE",
           "WHAT WOULD CHANGE MY MIND", "WHAT I'D DO THIS WEEK", "QUESTION FOR THE FOUNDER", "I DISAGREE MOST WITH",
@@ -131,16 +142,68 @@ def score(meta, rounds):
 def check(session):
     """Problems: a cited principle id missing from that seat's file, or a long quoted passage."""
     rounds = load(session)[2]
-    known = {i for f in (SKILL / "seats").glob("*.md") for i in re.findall(r"^\*\*([A-Z]{1,2}\d+)\b", f.read_text(), re.M)}
+    ids = [m for f in (SKILL / "seats").glob("*.md") for m in re.findall(PID, f.read_text(), re.M)]
+    known = {a + n for a, n in ids}
+    cite = re.compile(r"\b(?:" + "|".join(sorted({a for a, _ in ids}, key=len, reverse=True)) + r")\d+\b")  # the seats' own prefixes
     problems = []
     for n, r in rounds.items():
         for k, c in ((t["seat"], t["card"]) for t in r.get("turns") or [{"seat": k, "card": c} for k, c in r["cards"].items()]):
-            cited = {i for par in re.findall(r"\(([^)]*)\)", c["raw"]) for i in re.findall(r"\b(?:MB|[HMBZ])\d+\b", par)}
+            cited = {i for par in re.findall(r"\(([^)]*)\)", c["raw"]) for i in cite.findall(par)}
             for pid in sorted(cited - known): problems.append(f"round {n} {ROSTER[k][1]}: cites {pid}, which no seat file has")
             for f, v in c.items():  # REPLY TO / SAYS quote another seat, MOVED the seat's own old and new position, by design
                 if f in ("raw", "REPLY TO", "I DISAGREE MOST WITH", "SAYS", "MOVED") or not isinstance(v, str): continue
                 for q in re.findall(r"[\"“]([^\"”]+)[\"”]", v):
                     if len(q.split()) >= 12: problems.append(f"round {n} {ROSTER[k][1]}: long quote \"{q[:50]}...\"")
+    return problems
+
+
+def seats():
+    """(the roster as lines, problems). A seat is complete when it has a seat file with principles under a prefix no
+    other seat uses, a whole brain folder, a short name no other seat's contains, a lens, a question and a colour."""
+    lines, problems, prefixes = [], [], {}
+    for k, (name, short, lens, question, color) in ROSTER.items():
+        f, brain = SKILL / "seats" / f"{k}.md", SKILL / "brains" / k
+        lines.append(f"{k}: {name} ({lens})")
+        if not re.fullmatch(r"[a-z][a-z0-9]*", k): problems.append(f"{k}: the key is lowercase letters and digits only")
+        for field, v in (("name", name), ("short", short), ("lens", lens), ("question", question)):
+            if not v.strip(): problems.append(f"{k}: roster.json has no {field}")
+        if not re.fullmatch(r"#[0-9a-fA-F]{6}", color): problems.append(f"{k}: color must be a hex like #93aaea")
+        for o, r in ROSTER.items():
+            if o != k and short and short.lower() in r[1].lower(): problems.append(f"{k}: short name {short!r} is inside {r[1]!r}, cards would be filed under the wrong seat")
+        if not f.exists(): problems.append(f"{k}: seats/{k}.md is missing"); continue
+        pre = {a for a, _ in re.findall(PID, f.read_text(), re.M)}
+        if len(pre) != 1: problems.append(f"{k}: seats/{k}.md needs principles under one id prefix, like **H1**; found {sorted(pre) or 'none'}")
+        for a in pre:
+            if a in prefixes: problems.append(f"{k}: principle prefix {a} is already {prefixes[a]}'s")
+            prefixes.setdefault(a, k)
+        for b in BRAIN:
+            if not (brain / b).exists() or not (brain / b).read_text().strip(): problems.append(f"{k}: brains/{k}/{b} is missing or empty")
+    for f in sorted((SKILL / "seats").glob("*.md")):
+        if f.stem not in ROSTER: problems.append(f"{f.stem}: seats/{f.name} has no entry in seats/roster.json")
+    return lines, problems
+
+
+def add(folder):
+    """Seat the person staged in <folder> (its name is the key). Returns the problems; with none, the seat is in and the
+    staging folder is gone. With any, the council is left exactly as it was."""
+    src = Path(folder).resolve(); k = src.name
+    seat, brain = SKILL / "seats" / f"{k}.md", SKILL / "brains" / k
+    missing = [n for n in ["seat.md", "seat.json"] + [f"brain/{b}" for b in BRAIN] if not (src / n).is_file()]
+    if missing: return [f"{k}: {folder} has no " + ", ".join(missing)]
+    if k in ROSTER or seat.exists() or brain.exists(): return [f"{k}: already on the council"]
+    try: info = {f: str(json.loads((src / "seat.json").read_text()).get(f, "")) for f in ("name", "short", "lens", "question", "color")}
+    except (ValueError, AttributeError): return [f"{k}: seat.json is not a JSON object"]
+    before = EXTRA.read_text() if EXTRA.exists() else None
+    shutil.copy(src / "seat.md", seat); shutil.copytree(src / "brain", brain)
+    EXTRA.write_text(json.dumps(json.loads(before or "{}") | {k: info}, indent=1, ensure_ascii=False) + "\n")
+    ROSTER[k] = tuple(info.values())
+    problems = [p for p in seats()[1] if p.startswith(k + ":")]
+    if problems:
+        seat.unlink(); shutil.rmtree(brain); del ROSTER[k]
+        EXTRA.write_text(before) if before is not None else EXTRA.unlink()
+    else:
+        shutil.rmtree(src)
+        if not any(src.parent.iterdir()): src.parent.rmdir()
     return problems
 
 
@@ -170,13 +233,18 @@ def chair_lines(chat):
     return out
 
 
+def face(k):
+    """Whether the room has renders for this seat; an added seat shows its initials unless you add the four images."""
+    return all((SKILL / "room/assets/faces" / f"{k}-{f}.webp").exists() for f in ("base", "mid", "open", "blink"))
+
+
 def session_json(session):
     s, meta, rounds = load(session)
     verdict = card((s / "verdict.md").read_text()) if (s / "verdict.md").exists() else {}
     chat = (s / "chat.md").read_text() if (s / "chat.md").exists() else ""
     return {"slug": s.resolve().name, "question": meta["question"], "options": meta["options"], "hold": meta.get("hold"), "weights": meta["weights"],
             "business": meta.get("business", ""),
-            "seats": {k: dict(zip(("name", "short", "lens", "question", "color"), ROSTER[k])) for k in meta["weights"]},
+            "seats": {k: dict(zip(("name", "short", "lens", "question", "color"), ROSTER[k])) | ({} if face(k) else {"face": False}) for k in meta["weights"]},
             "rounds": rounds, "verdict": verdict, "score": score(meta, rounds), "chat": chat_lines(chat),
             "chair": chair_lines(chat_lines(chat))}
 
@@ -194,9 +262,17 @@ def page(session):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3 or sys.argv[1] not in ("score", "check", "page"):
+    if sys.argv[1:] == ["seats"]:
+        lines, p = seats()
+        print("\n".join(lines + (p or [f"OK: {len(lines)} seats, every one complete"])))
+        sys.exit(1 if p else 0)
+    if len(sys.argv) != 3 or sys.argv[1] not in ("score", "check", "page", "add"):
         sys.exit(__doc__)
     cmd, ses = sys.argv[1:]
+    if cmd == "add":
+        p = add(ses)
+        print("\n".join(p) or f"OK: {ROSTER[Path(ses).resolve().name][0]} sits on the council ({len(ROSTER)} seats)")
+        sys.exit(1 if p else 0)
     if cmd == "score":
         _, meta, rounds = load(ses)
         sc = score(meta, rounds)
@@ -210,4 +286,8 @@ if __name__ == "__main__":
         print("\n".join(p) or "OK: every cited principle exists, no long quotes")
         sys.exit(1 if p else 0)
     else:
-        print(page(ses))
+        index = page(ses)
+        print(index)
+        if os.environ.get("COUNCIL_OPEN") != "0":   # the table opens by itself; with no browser, the path above is enough
+            try: webbrowser.open(index.resolve().as_uri())
+            except Exception: pass
